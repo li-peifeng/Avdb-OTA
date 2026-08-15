@@ -13,13 +13,16 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 - Manifest：[`manifest.json`](./manifest.json)
-- 版本：`2026.8.15.100`
-- 加密包：[`avdb-2026.8.15.100.pkg.enc`](./avdb-2026.8.15.100.pkg.enc)
+- 版本：`2026.8.15.101`
+- 加密包：[`avdb-2026.8.15.101.pkg.enc`](./avdb-2026.8.15.101.pkg.enc)
 - 签名算法：Ed25519
-- 签名 `key_id`：`2026-main`
+- 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
   （当前包含 `2026-main` 与预发布的 `2026-next`）
+
+`2026.8.15.101` 是签名密钥轮换验证版本，应用包与上一版本同源；
+本次变化的重点是确认双 keyring 客户端可以从旧签名版本跨到新签名版本。
 
 稳定入口地址：
 
@@ -31,8 +34,8 @@ https://raw.githubusercontent.com/li-peifeng/Avdb-OTA/main/manifest.json
 
 部署端必须通过 Docker Secret、只读挂载或等效的 root-owned 文件提供 AES 密钥；
 AES 密钥不会提交到本仓库。Manifest 公钥 keyring 只包含公开的 Ed25519 公钥，
-可以从本仓库取得后审阅并挂载到部署端。当前线上 Manifest 仍使用
-`2026-main`，`2026-next` 只是提前加入 keyring，尚未用于当前 Release。
+可以从本仓库取得后审阅并挂载到部署端。上一版本 `2026.8.15.100` 使用
+`2026-main`，当前 `2026.8.15.101` 已切换到 `2026-next`。
 
 ```text
 AVDB_OTA_MANIFEST_URL=https://raw.githubusercontent.com/li-peifeng/Avdb-OTA/main/manifest.json
@@ -56,9 +59,9 @@ python /opt/avdb/launcher/update.py \
 
 ## 密钥轮换
 
-本仓库已经完成第一步轮换准备：keyring 同时包含 `2026-main` 和
-`2026-next`，但当前 `2026.8.15.100` Manifest 仍由 `2026-main` 签名，
-AES 解密密钥保持不变。
+本仓库已经完成第一轮签名切换：keyring 同时包含 `2026-main` 和
+`2026-next`，上一版本 `2026.8.15.100` 使用 `2026-main`，当前
+`2026.8.15.101` 使用 `2026-next`，AES 解密密钥保持不变。
 
 正式切换时必须遵循以下顺序：
 
