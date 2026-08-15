@@ -3,7 +3,7 @@
   "key_id": "2026-next",
   "package": "avdb-2026.8.15.102.pkg.enc",
   "sha256": "83a236d9da34c5e33b94c210df93d5d6dbb4d14ccaab3e46ee0b5e5aa0186d75",
-  "signature": "rvBVC6XhVtuIHQrq5ccEVoKyGcJS4IyAVy8SP87xBsd6D/R9Pt9+zLvzsf2/znD7ROn2TjJLCvXI8wXAZW+BCg==",
+  "signature": "oHZORwBQNSHyjIGTIquAaM7vg3bxklBGTCfLQrZwd7iDfj/7lx3utbA958ThDnQjZfAn9PZwU3H0B93OhZs3AA==",
   "signature_algorithm": "Ed25519",
   "size": 434794,
   "version": "2026.8.15.102"
