@@ -1,10 +1,10 @@
 {
   "format": "avdb-ota-manifest-v1",
   "key_id": "2026-next",
-  "package": "avdb-20260817-1700.pkg.enc",
-  "sha256": "9aa13b8a395b241413ca15d640efe8cf87b78b71e7a6dbbd52f5d04c84cb16c6",
-  "signature": "Udo6QeDpXhMp9A6ir9D2PrBfDiR/Gqi0e9ZsF7swsv9q+YCyfruJ0VCCuebUv1vkm+Sa/buPzr6tjsbp8ojhBg==",
+  "package": "avdb-20260817-1757.pkg.enc",
+  "sha256": "9d359a671042550d45e72543964e06f1d51f1318f0438a68e69224617bbd7d3b",
+  "signature": "7UJZN0GWCex2p8afiFajhEK9zkoldkpDQGjfJPIAuliqa+eUnea4AQygBC7pyFCh9KYe1LWgK69cGxCCiEZWBA==",
   "signature_algorithm": "Ed25519",
-  "size": 1689123,
-  "version": "20260817-1700"
+  "size": 1687815,
+  "version": "20260817-1757"
 }
