@@ -1,10 +1,24 @@
 {
+  "base_commit": "4add7cbb0d05adbdb9ef48597dae8d2703079b7a",
+  "base_version": "20260819-1343",
   "format": "avdb-ota-manifest-v1",
+  "image_required_files": [
+    "Dockerfile",
+    "launcher/build_ota.py",
+    "launcher/manifest.py",
+    "launcher/ota_config.py",
+    "launcher/remote_update.py"
+  ],
+  "image_update_reason": "本次版本修改了只能随 Docker 镜像发布的文件：Dockerfile、launcher/build_ota.py、launcher/manifest.py、launcher/ota_config.py、launcher/remote_update.py",
   "key_id": "2026-next",
-  "package": "avdb-20260819-0056.pkg.enc",
-  "sha256": "15b1f53aaa2011d00619afda79c6b6fdb2a990a52ebaef0a0274fd1b1c0105a7",
-  "signature": "LYjfUHXcK4JHu3FzbLbwZgAl9/LUElO8noLZARseoHdL/86WNLKCAQqjEinbrbMn4Uv+6AXN9JCLlSA4f6zUBg==",
+  "package": "avdb-20260819-1750.pkg.enc",
+  "requires_image_update": true,
+  "sha256": "cac6c8a523ad47ecfd8d6942039006959305ddffecf16e7fc73c2c2ba279224e",
+  "signature": "lGfW4RRKVEIKGfxFZuqbB36oQL0HV4W0leJbp3bWUfq990mCTJEQGJ5Y8wbiUEu3Df4L1VIR9hqIKJ/9UmHhDw==",
   "signature_algorithm": "Ed25519",
-  "size": 1689511,
-  "version": "20260819-0056"
+  "size": 1690084,
+  "source_commit": "4add7cbb0d05adbdb9ef48597dae8d2703079b7a",
+  "update_summary": "本次更新摘要：\n- OTA 版本：20260819-1750\n- 应用后端：app/api/services/ota_upgrade_service.py（共 1 个文件）\n- 前端资源：frontend/dist/assets/Avdb-UI-src-version-20260819-1306.js、frontend/dist/assets/Avdb-UI-src-version-20260819-1750.js、frontend/dist/assets/Github-Avdb-UI-index-20260819-1306.js、frontend/dist/assets/Github-Avdb-UI-index-20260819-1750.js、frontend/dist/assets/_authenticated-about-index-20260819-1306.js、frontend/dist/assets/_authenticated-about-index-20260819-1750.js 等 317 个文件\n- 启动与部署：Dockerfile、launcher/build_ota.py、launcher/manifest.py、launcher/ota_config.py、launcher/remote_update.py、scripts/publish-ota.sh（共 6 个文件）\n- 其他文件：README.md、tests/test_launcher.py（共 2 个文件）\n- 更新方式：需要更新 Docker 镜像。 本次版本修改了只能随 Docker 镜像发布的文件：Dockerfile、launcher/build_ota.py、launcher/manifest.py、launcher/ota_config.py、launcher/remote_update.py",
+  "url": "https://github.com/li-peifeng/Avdb-OTA/releases/download/20260819-1750/avdb-20260819-1750.pkg.enc",
+  "version": "20260819-1750"
 }
