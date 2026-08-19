@@ -13,21 +13,30 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260819-1343`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260819-1343)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260819-1343/manifest.json)
-- 版本：`20260819-1343`
-- 加密包：[`avdb-20260819-1343.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260819-1343/avdb-20260819-1343.pkg.enc)
+- Release：[`20260819-1750`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260819-1750)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260819-1750/manifest.json)
+- 版本：`20260819-1750`
+- 加密包：[`avdb-20260819-1750.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260819-1750/avdb-20260819-1750.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
-- 更新方式：`应用内 OTA`
+- 更新方式：`Docker 镜像`
+- 需要更新镜像的文件：`Dockerfile、launcher/build_ota.py、launcher/manifest.py、launcher/ota_config.py、launcher/remote_update.py`
+- 更新摘要：
+  本次更新摘要：
+  - OTA 版本：20260819-1750
+  - 应用后端：app/api/services/ota_upgrade_service.py（共 1 个文件）
+  - 前端资源：frontend/dist/assets/Avdb-UI-src-version-20260819-1306.js、frontend/dist/assets/Avdb-UI-src-version-20260819-1750.js、frontend/dist/assets/Github-Avdb-UI-index-20260819-1306.js、frontend/dist/assets/Github-Avdb-UI-index-20260819-1750.js、frontend/dist/assets/_authenticated-about-index-20260819-1306.js、frontend/dist/assets/_authenticated-about-index-20260819-1750.js 等 317 个文件
+  - 启动与部署：Dockerfile、launcher/build_ota.py、launcher/manifest.py、launcher/ota_config.py、launcher/remote_update.py、scripts/publish-ota.sh（共 6 个文件）
+  - 其他文件：README.md、tests/test_launcher.py（共 2 个文件）
+  - 更新方式：需要更新 Docker 镜像。 本次版本修改了只能随 Docker 镜像发布的文件：Dockerfile、launcher/build_ota.py、launcher/manifest.py、launcher/ota_config.py、launcher/remote_update.py
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
 当前发布版本使用 Manifest 指定的签名密钥，双 keyring 客户端可以从旧签名版本
 跨到新签名版本。
 
-正式发布时，每个版本会创建一个 GitHub Release，并将签名 Manifest 与加密包作为 Release 资产上传；main 分支只保留签名 Manifest 兼容指针，不再作为正式加密包下载源。 GitHub Releases 最多保留最近 3 个 OTA 版本，删除 Release 不会改写 Git 历史和标签。
+正式发布时，每个版本会创建一个 GitHub Release，并将签名 Manifest 与加密包作为 Release 资产上传；main 分支只保留签名 Manifest 兼容指针，不再作为正式加密包下载源。 GitHub Releases 保留全部历史 OTA 版本，便于回滚与审计；删除 Release 不会改写 Git 历史和标签。
 迁移窗口内，为兼容仍缓存旧 Raw Manifest 的客户端，main 可能暂留对应的旧包；正式新客户端下载以 Release 资产为准。
 
 稳定入口地址：
