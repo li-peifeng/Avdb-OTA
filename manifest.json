@@ -1,18 +1,18 @@
 {
   "base_commit": "ba0b3638eb68c70aa797802095e54e1cd9de29de",
-  "base_version": "20260820-0039",
+  "base_version": "20260820-0040",
   "format": "avdb-ota-manifest-v1",
   "image_required_files": [],
   "image_update_reason": "",
   "key_id": "2026-next",
-  "package": "avdb-20260820-0040.pkg.enc",
+  "package": "avdb-20260820-0044.pkg.enc",
   "requires_image_update": false,
-  "sha256": "7e30c863d4a61228d2945e3b1428682b8d6a2e62dae80f525e5b0d173c1da70a",
-  "signature": "G2kAou2rS0fdlqeJ7jIwF8EAw0BKFJ82wML9wk7Hd5I2rPtQ4FQYtyE3X3D7gyJxEh1m+wbUti2iNB0M2qKMCQ==",
+  "sha256": "bd55af8cb3c29092176e4aaf5afe4b45cab65716190de985feea59c758bb33b2",
+  "signature": "QHgV2oug5CzSAEZk0nG/zKb0dq0l4OrFKfTm16TVH43ZNTARKNYwCO0H46NiH61PPAPEh+X8tR+7E5qLgZdvAA==",
   "signature_algorithm": "Ed25519",
-  "size": 1689848,
+  "size": 1690908,
   "source_commit": "ba0b3638eb68c70aa797802095e54e1cd9de29de",
-  "update_summary": "修改并添加了前端界面与交互，优化页面使用体验。\n修改并添加了应用启动和更新流程，完善版本切换支持。\n可按需选择自动更新的站点最近 30 天增量包",
-  "url": "https://github.com/li-peifeng/Avdb-OTA/releases/download/20260820-0040/avdb-20260820-0040.pkg.enc",
-  "version": "20260820-0040"
+  "update_summary": "优化应用启动和更新流程，完善版本切换支持。\n可单选站点最近 30 天增量包。",
+  "url": "https://github.com/li-peifeng/Avdb-OTA/releases/download/20260820-0044/avdb-20260820-0044.pkg.enc",
+  "version": "20260820-0044"
 }
