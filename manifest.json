@@ -8,9 +8,10 @@
   "package": "avdb-20260819-1343.pkg.enc",
   "requires_image_update": false,
   "sha256": "fe856c44c0d8797c99b24932d3d3fcb0b6186dfd43f2283bcf97ad4f862129b8",
-  "signature": "xjTCN1E1NbHqxby4p3R34yRD7MBDQU3jOiQPJcATkV/YmSlrPvseaxnmFxgETChwcWSCLekO0dYqJAXvMr+CDw==",
+  "signature": "xdoU1iLSkOdkiNt++CKmPjOz9xRBhS/1HeMvRRPz486CCn7o8ZM+VDfUTtgpTrTx+lg0RiUhsk1KK2Sv6PnOAA==",
   "signature_algorithm": "Ed25519",
   "size": 1689434,
   "source_commit": "4add7cbb0d05adbdb9ef48597dae8d2703079b7a",
+  "url": "https://github.com/li-peifeng/Avdb-OTA/releases/download/20260819-1343/avdb-20260819-1343.pkg.enc",
   "version": "20260819-1343"
 }
