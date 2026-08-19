@@ -14,11 +14,13 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
 - Manifest：[`manifest.json`](./manifest.json)
-- 版本：`20260819-0056`
-- 加密包：[`avdb-20260819-0056.pkg.enc`](./avdb-20260819-0056.pkg.enc)
+- 版本：`20260819-1306`
+- 加密包：[`avdb-20260819-1306.pkg.enc`](./avdb-20260819-1306.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
+- 更新方式：`Docker 镜像`
+- 需要更新镜像的文件：`launcher/build_ota.py、launcher/installer.py、launcher/manifest.py、launcher/ota_policy.py、launcher/remote_update.py、launcher/update.py`
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 

@@ -1,10 +1,23 @@
 {
+  "base_commit": "b6d6e6876967d27e988b4aa22d51faccfef11f3b",
+  "base_version": "20260819-0056",
   "format": "avdb-ota-manifest-v1",
+  "image_required_files": [
+    "launcher/build_ota.py",
+    "launcher/installer.py",
+    "launcher/manifest.py",
+    "launcher/ota_policy.py",
+    "launcher/remote_update.py",
+    "launcher/update.py"
+  ],
+  "image_update_reason": "本次版本修改了只能随 Docker 镜像发布的文件：launcher/build_ota.py、launcher/installer.py、launcher/manifest.py、launcher/ota_policy.py、launcher/remote_update.py、launcher/update.py",
   "key_id": "2026-next",
-  "package": "avdb-20260819-0056.pkg.enc",
-  "sha256": "15b1f53aaa2011d00619afda79c6b6fdb2a990a52ebaef0a0274fd1b1c0105a7",
-  "signature": "LYjfUHXcK4JHu3FzbLbwZgAl9/LUElO8noLZARseoHdL/86WNLKCAQqjEinbrbMn4Uv+6AXN9JCLlSA4f6zUBg==",
+  "package": "avdb-20260819-1306.pkg.enc",
+  "requires_image_update": true,
+  "sha256": "6f15a27e207ae9ea51efcd5a9091f2438989813d9036d33d24f6568fdb7abd49",
+  "signature": "QQFTw2xoA4q+crG7rpBxqpxSdDDlIRIlWDuj0ROGSmWT0OHHS6XX+Za1o1gDLI055mulinyl4hXY3bf5VREiAA==",
   "signature_algorithm": "Ed25519",
-  "size": 1689511,
-  "version": "20260819-0056"
+  "size": 1689316,
+  "source_commit": "4add7cbb0d05adbdb9ef48597dae8d2703079b7a",
+  "version": "20260819-1306"
 }
