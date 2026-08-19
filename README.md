@@ -28,6 +28,7 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 跨到新签名版本。
 
 正式发布时，每个版本会创建一个 GitHub Release，并将签名 Manifest 与加密包作为 Release 资产上传；main 分支只保留签名 Manifest 兼容指针，不再作为正式加密包下载源。 GitHub Releases 最多保留最近 3 个 OTA 版本，删除 Release 不会改写 Git 历史和标签。
+迁移窗口内，为兼容仍缓存旧 Raw Manifest 的客户端，main 可能暂留对应的旧包；正式新客户端下载以 Release 资产为准。
 
 稳定入口地址：
 
