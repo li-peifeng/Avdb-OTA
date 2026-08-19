@@ -13,24 +13,36 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Manifest：[`manifest.json`](./manifest.json)
-- 版本：`20260819-0056`
-- 加密包：[`avdb-20260819-0056.pkg.enc`](./avdb-20260819-0056.pkg.enc)
+- Release：[`20260819-1343`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260819-1343)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260819-1343/manifest.json)
+- 版本：`20260819-1343`
+- 加密包：[`avdb-20260819-1343.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260819-1343/avdb-20260819-1343.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
+- 更新方式：`应用内 OTA`
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
 当前发布版本使用 Manifest 指定的签名密钥，双 keyring 客户端可以从旧签名版本
 跨到新签名版本。
 
-仓库当前分支只保留 Manifest 指向的最新加密包，不保留旧版本包文件。
+正式发布时，每个版本会创建一个 GitHub Release，并将签名 Manifest 与加密包作为
+Release 资产上传；main 分支只保留签名 Manifest 兼容指针，不再作为正式加密包下载源。
+GitHub Releases 保留全部历史 OTA 版本，便于回滚与审计；删除 Release 不会改写 Git 历史和标签。
+旧客户端若仍使用过期入口或缓存版本，会在包不存在时被要求强制更新；正式新客户端下载以 Release 资产为准。
 
 稳定入口地址：
 
 ```text
-https://raw.githubusercontent.com/li-peifeng/Avdb-OTA/main/manifest.json
+最新版 Release：
+https://github.com/li-peifeng/Avdb-OTA/releases/latest
+
+最新版 Manifest：
+https://github.com/li-peifeng/Avdb-OTA/releases/latest/download/manifest.json
+
+旧客户端兼容 Manifest：
+https://raw.githubusercontent.com/li-peifeng/Avdb-OTA/refs/heads/main/manifest.json
 ```
 
 ## 注意： 修改任意文件内容会使签名失效，将不能安装使用。
