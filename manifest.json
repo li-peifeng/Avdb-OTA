@@ -12,7 +12,7 @@
   "signature_algorithm": "Ed25519",
   "size": 1690627,
   "source_commit": "ba0b3638eb68c70aa797802095e54e1cd9de29de",
-  "update_summary": "修改并添加了前端界面与交互，优化页面使用体验。\n修改并添加了应用启动和更新流程，完善版本切换支持。\n修改了配置与使用说明，完善部署和操作指引。\n修改了相关应用功能，优化整体运行体验。",
+  "update_summary": "修改并添加了前端界面与交互，优化页面使用体验。\n修改并添加了应用启动和更新流程，完善版本切换支持。\n可按需选择自动更新的站点最近 30 天增量包",
   "url": "https://github.com/li-peifeng/Avdb-OTA/releases/download/20260820-0018/avdb-20260820-0018.pkg.enc",
   "version": "20260820-0018"
 }
