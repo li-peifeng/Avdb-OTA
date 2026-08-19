@@ -1,18 +1,18 @@
 {
   "base_commit": "ba0b3638eb68c70aa797802095e54e1cd9de29de",
-  "base_version": "20260820-0040",
+  "base_version": "20260820-0044",
   "format": "avdb-ota-manifest-v1",
   "image_required_files": [],
   "image_update_reason": "",
   "key_id": "2026-next",
-  "package": "avdb-20260820-0044.pkg.enc",
+  "package": "avdb-20260820-0050.pkg.enc",
   "requires_image_update": false,
-  "sha256": "bd55af8cb3c29092176e4aaf5afe4b45cab65716190de985feea59c758bb33b2",
-  "signature": "QHgV2oug5CzSAEZk0nG/zKb0dq0l4OrFKfTm16TVH43ZNTARKNYwCO0H46NiH61PPAPEh+X8tR+7E5qLgZdvAA==",
+  "sha256": "148c0761938724643e2b8cfd9bac6a3c8ff643ba650fd7bf29a0f8bd3a9c5b59",
+  "signature": "F84gua8QjTkjJRlU739P6aWHhWc/E5SMZAe/I+d0TqBWAgEkUed+OOfm1P8cDQT0RvtmRq77mk03FPNUkLSkAw==",
   "signature_algorithm": "Ed25519",
-  "size": 1690908,
+  "size": 1690004,
   "source_commit": "ba0b3638eb68c70aa797802095e54e1cd9de29de",
   "update_summary": "优化应用启动和更新流程，完善版本切换支持。\n可单选站点最近 30 天增量包。",
-  "url": "https://github.com/li-peifeng/Avdb-OTA/releases/download/20260820-0044/avdb-20260820-0044.pkg.enc",
-  "version": "20260820-0044"
+  "url": "https://github.com/li-peifeng/Avdb-OTA/releases/download/20260820-0050/avdb-20260820-0050.pkg.enc",
+  "version": "20260820-0050"
 }
