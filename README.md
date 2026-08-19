@@ -13,10 +13,10 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260819-1750`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260819-1750)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260819-1750/manifest.json)
-- 版本：`20260819-1750`
-- 加密包：[`avdb-20260819-1750.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260819-1750/avdb-20260819-1750.pkg.enc)
+- Release：[`20260819-1830`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260819-1830)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260819-1830/manifest.json)
+- 版本：`20260819-1830`
+- 加密包：[`avdb-20260819-1830.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260819-1830/avdb-20260819-1830.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
@@ -24,9 +24,9 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 - 需要更新镜像的文件：`Dockerfile、launcher/build_ota.py、launcher/manifest.py、launcher/ota_config.py、launcher/remote_update.py`
 - 更新摘要：
   本次更新摘要：
-  - OTA 版本：20260819-1750
-  - 应用后端：app/api/services/ota_upgrade_service.py（共 1 个文件）
-  - 前端资源：frontend/dist/assets/Avdb-UI-src-version-20260819-1306.js、frontend/dist/assets/Avdb-UI-src-version-20260819-1750.js、frontend/dist/assets/Github-Avdb-UI-index-20260819-1306.js、frontend/dist/assets/Github-Avdb-UI-index-20260819-1750.js、frontend/dist/assets/_authenticated-about-index-20260819-1306.js、frontend/dist/assets/_authenticated-about-index-20260819-1750.js 等 317 个文件
+  - OTA 版本：20260819-1830
+  - 应用后端：app/api/services/article_service.py、app/api/services/database_service.py、app/api/services/ota_upgrade_service.py、app/scheduler/__init__.py（共 4 个文件）
+  - 前端资源：frontend/dist/assets/Avdb-UI-src-version-20260819-1306.js、frontend/dist/assets/Avdb-UI-src-version-20260819-1830.js、frontend/dist/assets/Github-Avdb-UI-index-20260819-1306.js、frontend/dist/assets/Github-Avdb-UI-index-20260819-1830.js、frontend/dist/assets/_authenticated-about-index-20260819-1306.js、frontend/dist/assets/_authenticated-about-index-20260819-1830.js 等 317 个文件
   - 启动与部署：Dockerfile、launcher/build_ota.py、launcher/manifest.py、launcher/ota_config.py、launcher/remote_update.py、scripts/publish-ota.sh（共 6 个文件）
   - 其他文件：README.md、tests/test_launcher.py（共 2 个文件）
   - 更新方式：需要更新 Docker 镜像。 本次版本修改了只能随 Docker 镜像发布的文件：Dockerfile、launcher/build_ota.py、launcher/manifest.py、launcher/ota_config.py、launcher/remote_update.py
