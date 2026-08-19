@@ -13,10 +13,10 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260820-0018`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260820-0018)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260820-0018/manifest.json)
-- 版本：`20260820-0018`
-- 加密包：[`avdb-20260820-0018.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260820-0018/avdb-20260820-0018.pkg.enc)
+- Release：[`20260820-0032`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260820-0032)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260820-0032/manifest.json)
+- 版本：`20260820-0032`
+- 加密包：[`avdb-20260820-0032.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260820-0032/avdb-20260820-0032.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
@@ -24,8 +24,7 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 - 更新摘要：
   修改并添加了前端界面与交互，优化页面使用体验。
   修改并添加了应用启动和更新流程，完善版本切换支持。
-  修改了配置与使用说明，完善部署和操作指引。
-  修改了相关应用功能，优化整体运行体验。
+  可按需选择自动更新的站点最近 30 天增量包
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
