@@ -30,8 +30,7 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 当前发布版本使用 Manifest 指定的签名密钥，双 keyring 客户端可以从旧签名版本
 跨到新签名版本。
 
-正式发布时，每个版本会创建一个 GitHub Release，并将签名 Manifest 与加密包作为 Release 资产上传；main 分支只保留签名 Manifest 兼容指针，不再作为正式加密包下载源。 GitHub Releases 保留全部历史 OTA 版本，便于回滚与审计；删除 Release 不会改写 Git 历史和标签。
-迁移窗口内，为兼容仍缓存旧 Raw Manifest 的客户端，main 可能暂留对应的旧包；正式新客户端下载以 Release 资产为准。
+正式发布时，每个版本会创建一个 GitHub Release，并将签名 Manifest 与加密包作为 Release 资产上传；main 分支仅保留 README 和公钥 keyring，不保存 Manifest 或加密 OTA 包。GitHub Releases 是唯一的 OTA 发布来源，并保留全部历史版本，便于回滚与审计。
 
 稳定入口地址：
 
@@ -41,9 +40,6 @@ https://github.com/li-peifeng/Avdb-OTA/releases/latest
 
 最新版 Manifest：
 https://github.com/li-peifeng/Avdb-OTA/releases/latest/download/manifest.json
-
-旧客户端兼容 Manifest：
-https://raw.githubusercontent.com/li-peifeng/Avdb-OTA/refs/heads/main/manifest.json
 ```
 
 ## 注意： 修改任意文件内容会使签名失效，将不能安装使用。
