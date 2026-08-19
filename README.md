@@ -13,23 +13,19 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260819-1830`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260819-1830)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260819-1830/manifest.json)
-- 版本：`20260819-1830`
-- 加密包：[`avdb-20260819-1830.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260819-1830/avdb-20260819-1830.pkg.enc)
+- Release：[`20260820-0011`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260820-0011)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260820-0011/manifest.json)
+- 版本：`20260820-0011`
+- 加密包：[`avdb-20260820-0011.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260820-0011/avdb-20260820-0011.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
-- 更新方式：`Docker 镜像`
-- 需要更新镜像的文件：`Dockerfile、launcher/build_ota.py、launcher/manifest.py、launcher/ota_config.py、launcher/remote_update.py`
+- 更新方式：`应用内 OTA`
 - 更新摘要：
-  本次更新摘要：
-  - OTA 版本：20260819-1830
-  - 应用后端：app/api/services/article_service.py、app/api/services/database_service.py、app/api/services/ota_upgrade_service.py、app/scheduler/__init__.py（共 4 个文件）
-  - 前端资源：frontend/dist/assets/Avdb-UI-src-version-20260819-1306.js、frontend/dist/assets/Avdb-UI-src-version-20260819-1830.js、frontend/dist/assets/Github-Avdb-UI-index-20260819-1306.js、frontend/dist/assets/Github-Avdb-UI-index-20260819-1830.js、frontend/dist/assets/_authenticated-about-index-20260819-1306.js、frontend/dist/assets/_authenticated-about-index-20260819-1830.js 等 317 个文件
-  - 启动与部署：Dockerfile、launcher/build_ota.py、launcher/manifest.py、launcher/ota_config.py、launcher/remote_update.py、scripts/publish-ota.sh（共 6 个文件）
-  - 其他文件：README.md、tests/test_launcher.py（共 2 个文件）
-  - 更新方式：需要更新 Docker 镜像。 本次版本修改了只能随 Docker 镜像发布的文件：Dockerfile、launcher/build_ota.py、launcher/manifest.py、launcher/ota_config.py、launcher/remote_update.py
+  修改并添加了前端界面与交互，优化页面使用体验。
+  修改并添加了应用启动和更新流程，完善版本切换支持。
+  修改了配置与使用说明，完善部署和操作指引。
+  修改了相关应用功能，优化整体运行体验。
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
