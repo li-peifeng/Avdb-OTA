@@ -21,8 +21,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
-- 更新摘要：
-  测试 OTA
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
@@ -31,7 +29,7 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 
 正式发布时，每个版本会创建一个 GitHub Release，并将签名 Manifest 与加密包作为 Release 资产上传；main 分支仅保留 README 和公钥 keyring，不保存 Manifest 或加密 OTA 包。GitHub Releases 是唯一的 OTA 发布来源，并保留全部历史版本，便于回滚与审计。
 
-稳定入口地址：
+稳定入口地址（客户端通过 Release API 解析最新 Release 提交号，再使用版本化资产）：
 
 ```text
 最新版 Release：
