@@ -13,17 +13,19 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260820-0133`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260820-0133)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260820-0133/manifest.json)
-- 版本：`20260820-0133`
-- 加密包：[`avdb-20260820-0133.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260820-0133/avdb-20260820-0133.pkg.enc)
+- Release：[`20260820-1116`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260820-1116)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260820-1116/manifest.json)
+- 版本：`20260820-1116`
+- 加密包：[`avdb-20260820-1116.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260820-1116/avdb-20260820-1116.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
-- 更新方式：`应用内 OTA`
+- 更新方式：`Docker 镜像`
+- 需要更新镜像的文件：`launcher/avdb_launcher.py、launcher/installer.py`
 - 更新摘要：
-  优化应用启动和更新流程，完善版本切换支持。
-  可单选站点最近 30 天增量包。
+  优化版本更新安全逻辑
+  优化调整全局按钮 UI
+  此版本需要更新镜像
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
