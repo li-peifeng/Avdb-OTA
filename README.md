@@ -13,15 +13,14 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260820-1551`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260820-1551)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260820-1551/manifest.json)
-- 版本：`20260820-1551`
-- 加密包：[`avdb-20260820-1551.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260820-1551/avdb-20260820-1551.pkg.enc)
+- Release：[`20260820-1609`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260820-1609)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260820-1609/manifest.json)
+- 版本：`20260820-1609`
+- 加密包：[`avdb-20260820-1609.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260820-1609/avdb-20260820-1609.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
-- 更新方式：`Docker 镜像`
-- 需要更新镜像的文件：`launcher/avdb_launcher.py、launcher/installer.py`
+- 更新方式：`应用内 OTA`
 - 更新摘要：
   添加影片详情页的 Tags 可点击筛选
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
