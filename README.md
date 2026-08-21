@@ -55,9 +55,4 @@ https://gitee.com/avdb/ota
 https://gitee.com/avdb/ota/releases/latest
 ```
 
-启用同步 workflow 前，需要在 GitHub 仓库 Secrets 中配置 `GITEE_TOKEN`，令牌需要
-具备 `avdb/ota` 仓库 Release/附件的读写权限。Manifest 使用相对的加密包路径，GitHub
-和 Gitee 可以复用同一份签名资产；客户端会先校验 Release 资产和 Manifest，再从当前
-选中的发布源下载加密包。
-
 ## 注意： 修改任意文件内容会使签名失效，将不能安装使用。
