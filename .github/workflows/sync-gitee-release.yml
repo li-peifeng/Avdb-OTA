@@ -1,18 +1,21 @@
-name: Sync release to Gitee (manual fallback)
+name: Sync GitHub Release to Gitee
 
 on:
+  release:
+    types:
+      - published
   workflow_dispatch:
     inputs:
       tag:
-        description: GitHub Release tag to sync as a manual fallback
+        description: GitHub Release tag to sync again
         required: true
         type: string
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
-  group: sync-gitee-release-${{ inputs.tag || github.run_id }}
+  group: sync-gitee-release
   cancel-in-progress: false
 
 jobs:
@@ -27,10 +30,11 @@ jobs:
       - name: Resolve release tag
         shell: bash
         env:
+          EVENT_RELEASE_TAG: ${{ github.event.release.tag_name || '' }}
           DISPATCH_TAG: ${{ inputs.tag || '' }}
         run: |
           set -Eeuo pipefail
-          tag="$DISPATCH_TAG"
+          tag="${EVENT_RELEASE_TAG:-$DISPATCH_TAG}"
           [[ "$tag" =~ ^[A-Za-z0-9._/-]+$ ]] || {
             echo "Invalid release tag: $tag" >&2
             exit 1
@@ -185,3 +189,88 @@ jobs:
             }
           done
           echo "Gitee release synced: https://gitee.com/$GITEE_REPOSITORY/releases/tag/$AVDB_OTA_RELEASE_TAG"
+
+      - name: Retain latest two GitHub releases
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          releases_json="$RUNNER_TEMP/github-releases.json"
+          gh api --paginate --slurp \
+            -H 'Accept: application/vnd.github+json' \
+            -H 'X-GitHub-Api-Version: 2022-11-28' \
+            "repos/$GITHUB_REPOSITORY/releases?per_page=100" > "$releases_json"
+
+          jq -r '
+            add
+            | sort_by((.published_at // .created_at // ""))
+            | reverse
+            | .[2:]
+            | .[]
+            | [.id, .tag_name]
+            | @tsv
+          ' "$releases_json" | while IFS=$'\t' read -r release_id tag_name; do
+            [[ -n "$release_id" && -n "$tag_name" ]] || continue
+            echo "Removing old GitHub release: $tag_name"
+            gh api --method DELETE \
+              -H 'Accept: application/vnd.github+json' \
+              -H 'X-GitHub-Api-Version: 2022-11-28' \
+              "repos/$GITHUB_REPOSITORY/releases/$release_id"
+            if ! gh api --method DELETE \
+              -H 'Accept: application/vnd.github+json' \
+              -H 'X-GitHub-Api-Version: 2022-11-28' \
+              "repos/$GITHUB_REPOSITORY/git/refs/tags/$tag_name"; then
+              echo "Warning: unable to delete GitHub tag: $tag_name" >&2
+            fi
+          done
+
+      - name: Retain latest two Gitee releases
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          api_root="https://gitee.com/api/v5/repos/$GITEE_REPOSITORY"
+          releases_json="$RUNNER_TEMP/gitee-releases.json"
+          release_records="$RUNNER_TEMP/gitee-release-records.ndjson"
+          release_page="$RUNNER_TEMP/gitee-release-page.json"
+          : > "$release_records"
+          page=1
+          while :; do
+            curl --fail-with-body --retry 3 --retry-delay 1 \
+              -H "Authorization: Bearer $GITEE_TOKEN" \
+              -H 'Accept: application/json' \
+              "$api_root/releases?per_page=100&page=$page" > "$release_page"
+            page_count="$(jq -r 'length' "$release_page")"
+            jq -c '.[]' "$release_page" >> "$release_records"
+            if (( page_count < 100 )); then
+              break
+            fi
+            page=$((page + 1))
+          done
+          jq -s '.' "$release_records" > "$releases_json"
+
+          tag_cleanup_dir="$RUNNER_TEMP/gitee-tag-cleanup"
+          git init --bare "$tag_cleanup_dir" >/dev/null 2>&1
+          credential_helper='!f() { echo username=oauth2; echo password="$GITEE_TOKEN"; }; f'
+
+          jq -r '
+            sort_by((.created_at // ""))
+            | reverse
+            | .[2:]
+            | .[]
+            | [.id, .tag_name]
+            | @tsv
+          ' "$releases_json" | while IFS=$'\t' read -r release_id tag_name; do
+            [[ -n "$release_id" && -n "$tag_name" ]] || continue
+            echo "Removing old Gitee release: $tag_name"
+            curl --fail-with-body --retry 3 --retry-delay 1 \
+              -H "Authorization: Bearer $GITEE_TOKEN" \
+              -X DELETE \
+              "$api_root/releases/$release_id"
+            if git ls-remote --exit-code --quiet \
+              "https://gitee.com/$GITEE_REPOSITORY.git" \
+              "refs/tags/$tag_name" >/dev/null 2>&1; then
+              git -C "$tag_cleanup_dir" -c credential.helper="$credential_helper" \
+                push "https://gitee.com/$GITEE_REPOSITORY.git" ":refs/tags/$tag_name"
+            else
+              echo "Gitee tag already absent: $tag_name"
+            fi
+          done
