@@ -1,13 +1,10 @@
-name: Sync published release to Gitee
+name: Sync release to Gitee (manual fallback)
 
 on:
-  release:
-    types:
-      - published
   workflow_dispatch:
     inputs:
       tag:
-        description: GitHub Release tag to sync
+        description: GitHub Release tag to sync as a manual fallback
         required: true
         type: string
 
@@ -15,7 +12,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: sync-gitee-release-${{ github.event.release.tag_name || inputs.tag || github.run_id }}
+  group: sync-gitee-release-${{ inputs.tag || github.run_id }}
   cancel-in-progress: false
 
 jobs:
@@ -30,15 +27,10 @@ jobs:
       - name: Resolve release tag
         shell: bash
         env:
-          RELEASE_TAG: ${{ github.event.release.tag_name || '' }}
           DISPATCH_TAG: ${{ inputs.tag || '' }}
         run: |
           set -Eeuo pipefail
-          if [[ "$GITHUB_EVENT_NAME" == "release" ]]; then
-            tag="$RELEASE_TAG"
-          else
-            tag="$DISPATCH_TAG"
-          fi
+          tag="$DISPATCH_TAG"
           [[ "$tag" =~ ^[A-Za-z0-9._/-]+$ ]] || {
             echo "Invalid release tag: $tag" >&2
             exit 1
