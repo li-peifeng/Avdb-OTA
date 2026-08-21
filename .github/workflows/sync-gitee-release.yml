@@ -92,7 +92,17 @@ jobs:
             -o "$release_json" -w '%{http_code}' \
             "$api_root/releases/tags/$encoded_tag" || true)"
 
+          release_missing=0
           if [[ "$release_status" == '404' ]]; then
+            release_missing=1
+          elif [[ "$release_status" == '200' ]] \
+            && jq -e 'type == "null"' "$release_json" >/dev/null; then
+            # Gitee returns HTTP 200 with a JSON null body when the tag has no
+            # Release, instead of returning HTTP 404 like GitHub does.
+            release_missing=1
+          fi
+
+          if [[ "$release_missing" == '1' ]]; then
             body_file="$RUNNER_TEMP/gitee-release-payload.json"
             python3 - "$body_file" "$AVDB_OTA_RELEASE_TAG" "$AVDB_OTA_ASSET_DIR/release-body.md" <<'PY'
           import json
