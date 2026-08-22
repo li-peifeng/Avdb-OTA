@@ -13,19 +13,16 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260822-1114`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260822-1114)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260822-1114/manifest.json)
-- 版本：`20260822-1114`
-- 加密包：[`avdb-20260822-1114.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260822-1114/avdb-20260822-1114.pkg.enc)
+- Release：[`20260822-1117`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260822-1117)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260822-1117/manifest.json)
+- 版本：`20260822-1117`
+- 加密包：[`avdb-20260822-1117.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260822-1117/avdb-20260822-1117.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
-  1.修复可能的版本回滚问题
-  2.修复局域网绕过代理时可能重新继承系统代理的问题
-  3.GitHub OTA 未配置应用代理时，检查和下载可能使用进程环境代理的问题
-  4.优化导航栏更多的按钮排列
+  修复下载记录和Log的时间可能不跟随 TZ 变量的问题
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
