@@ -13,15 +13,14 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260822-0212`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260822-0212)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260822-0212/manifest.json)
-- 版本：`20260822-0212`
-- 加密包：[`avdb-20260822-0212.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260822-0212/avdb-20260822-0212.pkg.enc)
+- Release：[`20260822-1114`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260822-1114)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260822-1114/manifest.json)
+- 版本：`20260822-1114`
+- 加密包：[`avdb-20260822-1114.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260822-1114/avdb-20260822-1114.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
-- 更新方式：`Docker 镜像`
-- 需要更新镜像的文件：`launcher/avdb_launcher.py、launcher/ota_policy.py`
+- 更新方式：`应用内 OTA`
 - 更新摘要：
   1.修复可能的版本回滚问题
   2.修复局域网绕过代理时可能重新继承系统代理的问题
