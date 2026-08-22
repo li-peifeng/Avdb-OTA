@@ -13,17 +13,18 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260822-1553`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260822-1553)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260822-1553/manifest.json)
-- 版本：`20260822-1553`
-- 加密包：[`avdb-20260822-1553.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260822-1553/avdb-20260822-1553.pkg.enc)
+- Release：[`20260822-1826`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260822-1826)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260822-1826/manifest.json)
+- 版本：`20260822-1826`
+- 加密包：[`avdb-20260822-1826.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260822-1826/avdb-20260822-1826.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
-  依赖组件升级，漏洞修复
-  首页轮播图去除（亚洲无码）板块
+  首页轮播图只显示（4K原版）板块
+  轮播图在宽度变宽后的裁减位置改成右上
+  修复轮播图的层级问题
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
