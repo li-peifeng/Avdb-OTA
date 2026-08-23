@@ -13,16 +13,16 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260823-1722`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260823-1722)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260823-1722/manifest.json)
-- 版本：`20260823-1722`
-- 加密包：[`avdb-20260823-1722.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260823-1722/avdb-20260823-1722.pkg.enc)
+- Release：[`20260824-0017`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260824-0017)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260824-0017/manifest.json)
+- 版本：`20260824-0017`
+- 加密包：[`avdb-20260824-0017.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260824-0017/avdb-20260824-0017.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
-  添加 R18 设置项，位置： 设置-网络-R18. 资源库图片接入 R18 数据库，打开后优先使用 R18里 dmm的图片地址，如果目标图片符合标准并且回写开关打开则覆盖原图片地址，关闭后保持现有状态， R18 数据库同时支持剧照显示，最多20张。第一次需要先进行下载并导入，自动更新可按需打开
+  添加 R18 设置项，位置： 设置-网络-R18. 资源库图片接入 R18 数据库，打开后优先使用 R18 里 DMM 的图片地址，如果目标图片符合标准并且回写开关打开则覆盖原图片地址，关闭后保持现有状态， R18 数据库同时支持剧照显示，最多40张。第一次需要先进行下载并导入，自动更新可按需打开
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
