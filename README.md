@@ -13,16 +13,18 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260824-0151`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260824-0151)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260824-0151/manifest.json)
-- 版本：`20260824-0151`
-- 加密包：[`avdb-20260824-0151.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260824-0151/avdb-20260824-0151.pkg.enc)
+- Release：[`20260824-0155`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260824-0155)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260824-0155/manifest.json)
+- 版本：`20260824-0155`
+- 加密包：[`avdb-20260824-0155.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260824-0155/avdb-20260824-0155.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
-  添加 R18 设置项，位置： 设置-网络-R18. 资源库图片接入 R18 数据库，打开后优先使用 R18 里 DMM 的图片地址，如果目标图片符合标准并且回写开关打开则覆盖原图片地址，关闭后保持现有状态， R18 数据库同时支持剧照显示，最多40张。第一次需要先进行下载并导入，自动更新可按需打开
+  影片详情中的合格附加剧照少于 3 张时，按番号从本地 R18 数据库补充全部 full 剧照；触发后不会在数量达到 3 张时中途停止，也不会使用封面冒充剧照。
+  新增供 Avdb Magic Tools 安全读取 R18 剧照候选和缓存图片的接口。
+  支持插件接口获取剧照数据
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
