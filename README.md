@@ -13,18 +13,17 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260824-0300`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260824-0300)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260824-0300/manifest.json)
-- 版本：`20260824-0300`
-- 加密包：[`avdb-20260824-0300.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260824-0300/avdb-20260824-0300.pkg.enc)
+- Release：[`20260824-1257`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260824-1257)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260824-1257/manifest.json)
+- 版本：`20260824-1257`
+- 加密包：[`avdb-20260824-1257.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260824-1257/avdb-20260824-1257.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
-  影片详情中的合格附加剧照少于 3 张时，按番号从本地 R18 数据库补充全部剧照；
-  新增供插件安全读取剧照候选和缓存图片的接口让插件获取剧照数据
-  优化图片加载日志输出
+  Emby 新增媒体的Telegram 通知里的 Emby 链接如果有填写外网链接就使用外网链接，没有填写外网才使用内网链接
+  添加 手动导入 R18 数据库
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
