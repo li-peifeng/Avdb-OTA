@@ -13,18 +13,17 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260824-0155`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260824-0155)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260824-0155/manifest.json)
-- 版本：`20260824-0155`
-- 加密包：[`avdb-20260824-0155.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260824-0155/avdb-20260824-0155.pkg.enc)
+- Release：[`20260824-0246`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260824-0246)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260824-0246/manifest.json)
+- 版本：`20260824-0246`
+- 加密包：[`avdb-20260824-0246.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260824-0246/avdb-20260824-0246.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
-  影片详情中的合格附加剧照少于 3 张时，按番号从本地 R18 数据库补充全部 full 剧照；触发后不会在数量达到 3 张时中途停止，也不会使用封面冒充剧照。
-  新增供 Avdb Magic Tools 安全读取 R18 剧照候选和缓存图片的接口。
-  支持插件接口获取剧照数据
+  影片详情中的合格附加剧照少于 3 张时，按番号从本地 R18 数据库补充全部剧照；
+  新增供插件安全读取剧照候选和缓存图片的接口让插件获取剧照数据
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
