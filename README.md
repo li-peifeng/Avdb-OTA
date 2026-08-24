@@ -13,10 +13,10 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260824-1345`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260824-1345)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260824-1345/manifest.json)
-- 版本：`20260824-1345`
-- 加密包：[`avdb-20260824-1345.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260824-1345/avdb-20260824-1345.pkg.enc)
+- Release：[`20260824-1413`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260824-1413)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260824-1413/manifest.json)
+- 版本：`20260824-1413`
+- 加密包：[`avdb-20260824-1413.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260824-1413/avdb-20260824-1413.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
@@ -25,6 +25,7 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   Emby 新增媒体的Telegram 通知里的 Emby 链接如果有填写外网链接就使用外网链接，没有填写外网才使用内网链接
   添加 手动导入 R18 数据库
   修复修改头像时的分辨率显示
+  修复网络下的标签栏在移动端重叠的问题
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
