@@ -13,10 +13,10 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260824-1723`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260824-1723)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260824-1723/manifest.json)
-- 版本：`20260824-1723`
-- 加密包：[`avdb-20260824-1723.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260824-1723/avdb-20260824-1723.pkg.enc)
+- Release：[`20260824-2205`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260824-2205)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260824-2205/manifest.json)
+- 版本：`20260824-2205`
+- 加密包：[`avdb-20260824-2205.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260824-2205/avdb-20260824-2205.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
@@ -27,6 +27,7 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   修复修改头像时的分辨率显示
   修复网络下的标签栏在移动端重叠的问题
   统一 UI 的圆角显示，视觉上更加美观
+  高清海报和封面图接入，设置里打开
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
