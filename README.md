@@ -13,10 +13,10 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260825-0213`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260825-0213)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260825-0213/manifest.json)
-- 版本：`20260825-0213`
-- 加密包：[`avdb-20260825-0213.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260825-0213/avdb-20260825-0213.pkg.enc)
+- Release：[`20260825-0215`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260825-0215)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260825-0215/manifest.json)
+- 版本：`20260825-0215`
+- 加密包：[`avdb-20260825-0215.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260825-0215/avdb-20260825-0215.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
@@ -27,6 +27,7 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   修复网络下的标签栏在移动端重叠的问题
   统一 UI 的圆角显示，视觉上更加美观
   高清海报和封面图接入，Emby 插件同步支持
+  优化 SQLite 导入 R18 的逻辑
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
