@@ -13,10 +13,10 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260826-0233`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260826-0233)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260826-0233/manifest.json)
-- 版本：`20260826-0233`
-- 加密包：[`avdb-20260826-0233.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260826-0233/avdb-20260826-0233.pkg.enc)
+- Release：[`20260826-1339`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260826-1339)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260826-1339/manifest.json)
+- 版本：`20260826-1339`
+- 加密包：[`avdb-20260826-1339.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260826-1339/avdb-20260826-1339.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
@@ -28,6 +28,7 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   计划任务里的（批量海报/封面/剧照 补全任务）已拆开两个（批量海报/封面 补全任务）和（批量剧照补全任务），并且插件设置里的海报，封面，剧照覆盖开关都已独立分开
   轮播图在宽屏上主图宽度不变的情况下加大高度，避免海报裁减严重，并提供3档高度选择
   修复首页轮播图点击打开的资源不能复制的问题
+  R18 检查更新后可选择立即更新
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
