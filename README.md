@@ -13,22 +13,22 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260826-0227`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260826-0227)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260826-0227/manifest.json)
-- 版本：`20260826-0227`
-- 加密包：[`avdb-20260826-0227.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260826-0227/avdb-20260826-0227.pkg.enc)
+- Release：[`20260826-0228`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260826-0228)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260826-0228/manifest.json)
+- 版本：`20260826-0228`
+- 加密包：[`avdb-20260826-0228.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260826-0228/avdb-20260826-0228.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
-  添加 手动导入 R18 数据库
-  修复修改头像时的分辨率显示
-  修复网络下的标签栏在移动端重叠的问题
-  统一 UI 的圆角显示，视觉上更加美观
-  高清海报和封面图接入，Emby 插件同步支持
-  优化 SQLite 导入 R18 的逻辑
-  添加 R18 增量更新功能
+  R18 数据库现已支持增量更新，并支持 Gitee 仓库下载
+  优化资源库导出并上传仓库的流程
+  修复 Gfriends 和 Jalbum 可能没有走代理的问题
+  计划任务里的（批量海报/封面/剧照 补全任务）已拆开两个 （批量海报/封面 补全任务） 和 （批量 剧照 补全任务），
+  并且插件设置里的 海报，封面，剧照 覆盖开关都已独立分开
+  轮播图在宽屏上主图宽度不变的情况下加大高度，避免海报裁减严重，并提供3档高度选择
+  修复首页轮播图点击打开的资源不能复制的问题
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
