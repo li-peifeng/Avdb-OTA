@@ -13,17 +13,17 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260827-1845`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260827-1845)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260827-1845/manifest.json)
-- 版本：`20260827-1845`
-- 加密包：[`avdb-20260827-1845.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260827-1845/avdb-20260827-1845.pkg.enc)
+- Release：[`20260827-1846`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260827-1846)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260827-1846/manifest.json)
+- 版本：`20260827-1846`
+- 加密包：[`avdb-20260827-1846.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260827-1846/avdb-20260827-1846.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
-  图片补全 R18 封面，海报，剧照 都使用独立开关控制
-  Telegram 发送通知的图片支持高清图（包括：下载、新增媒体、删除、已在库的磁力搜索），并支持自定义番号测试通知
+  图片补全 R18 封面，海报，剧照 都使用独立开关控制。
+  Telegram 发送通知的图片支持高清图（包括：下载、新增媒体、删除、已在库的磁力搜索），并支持自定义番号测试通知。
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
