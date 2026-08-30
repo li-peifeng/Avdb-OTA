@@ -13,21 +13,21 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260830-1615`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260830-1615)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260830-1615/manifest.json)
-- 版本：`20260830-1615`
-- 加密包：[`avdb-20260830-1615.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260830-1615/avdb-20260830-1615.pkg.enc)
+- Release：[`20260830-1717`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260830-1717)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260830-1717/manifest.json)
+- 版本：`20260830-1717`
+- 加密包：[`avdb-20260830-1717.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260830-1717/avdb-20260830-1717.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
-  在线资源版块优化：
+  优化卡片封面显示效果，改成从右上放大
   修复在线资源从详情页返回列表时会回顶和定位不准的问题
-  修复再次进入详情页会带入列表位置的问题
+  在线资源修复再次进入详情页会带入列表位置的问题
   点击磁链胶囊图标现在可直接展示磁链数据，可快捷复制下载。
-  添加影片详情页只显示女演员选项（设置-个人-在线账户-Javdb卡片）
-  TOP 250 支持有码，无码，FC2，欧美及年份筛选
+  在线资源添加影片详情页只显示女演员选项（设置-个人-在线账户-Javdb卡片）
+  在线资源TOP 250 支持有码，无码，FC2，欧美及年份筛选
   ----------历史更新----------
   添加 Javdb 在线资源。 原设置按钮移至更多里。
   在线播放正片；收藏；想看；Top 250，这些需要登录才会显示，可能需要VIP。
