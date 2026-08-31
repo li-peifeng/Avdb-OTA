@@ -13,10 +13,10 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260831-1544`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260831-1544)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260831-1544/manifest.json)
-- 版本：`20260831-1544`
-- 加密包：[`avdb-20260831-1544.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260831-1544/avdb-20260831-1544.pkg.enc)
+- Release：[`20260831-1545`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260831-1545)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260831-1545/manifest.json)
+- 版本：`20260831-1545`
+- 加密包：[`avdb-20260831-1545.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260831-1545/avdb-20260831-1545.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
@@ -25,15 +25,7 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   优化个人页各页面的跳转逻辑
   修复详情页返回列表时定位不准的问题
   完善接口的查询逻辑
-  在线资源添加个人中心，支持以下内容：
-  直接登录-转到设置页
-  收藏番号
-  收藏演员
-  收藏系列
-  收藏片商
-  想看/看过
-  近期浏览
-  我的清单
+  修复 top 250 分类筛选没有生效的问题
   -----历史更新-----
   优化卡片封面显示效果，改成从右上放大
   修复在线资源从详情页返回列表时会回顶和定位不准的问题
