@@ -13,10 +13,10 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260901-0322`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260901-0322)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260901-0322/manifest.json)
-- 版本：`20260901-0322`
-- 加密包：[`avdb-20260901-0322.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260901-0322/avdb-20260901-0322.pkg.enc)
+- Release：[`20260901-0751`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260901-0751)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260901-0751/manifest.json)
+- 版本：`20260901-0751`
+- 加密包：[`avdb-20260901-0751.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260901-0751/avdb-20260901-0751.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
@@ -25,6 +25,7 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   添加订阅功能，支持影片/演员
   优化内存占用
   在线资源影片详情页缺失简介补全
+  优化演员订阅逻辑
   -----历史更新-----
   优化个人页各页面的跳转逻辑
   修复详情页返回列表时定位不准的问题
