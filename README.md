@@ -13,15 +13,17 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260902-2101`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260902-2101)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260902-2101/manifest.json)
-- 版本：`20260902-2101`
-- 加密包：[`avdb-20260902-2101.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260902-2101/avdb-20260902-2101.pkg.enc)
+- Release：[`20260902-2115`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260902-2115)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260902-2115/manifest.json)
+- 版本：`20260902-2115`
+- 加密包：[`avdb-20260902-2115.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260902-2115/avdb-20260902-2115.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  优化订阅尺寸的匹配逻辑比如：资源的 4K、字幕、无码属性都相同，并且都符合订阅配置的大小范围时，会比较文件大小。5GB～15GB 范围内会选择 14GB，而不是列表中的第一个 6GB。
+  图片显示模式现在改为数据库持久化。
   添加评论区链接提取功能。
   添加订阅导入导出选项，支持 DBO 导出的分享码。
   在线资源卡片下显示评论胶囊按钮，可快速查看影片评论。
