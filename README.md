@@ -13,15 +13,17 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260902-0116`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260902-0116)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260902-0116/manifest.json)
-- 版本：`20260902-0116`
-- 加密包：[`avdb-20260902-0116.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260902-0116/avdb-20260902-0116.pkg.enc)
+- Release：[`20260902-1444`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260902-1444)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260902-1444/manifest.json)
+- 版本：`20260902-1444`
+- 加密包：[`avdb-20260902-1444.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260902-1444/avdb-20260902-1444.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  修复 CD2 下载成功但提示接口返回异常的问题
+  可自定义 JavDB 网页/API 镜像站地址
   订阅支持影片/演员/系列/排行榜/TOP 250
   收藏功能现支持影片/演员/系列
   系列信息支持收藏/订阅
