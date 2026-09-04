@@ -13,17 +13,19 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260904-1653`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260904-1653)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260904-1653/manifest.json)
-- 版本：`20260904-1653`
-- 加密包：[`avdb-20260904-1653.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260904-1653/avdb-20260904-1653.pkg.enc)
+- Release：[`20260904-1911`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260904-1911)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260904-1911/manifest.json)
+- 版本：`20260904-1911`
+- 加密包：[`avdb-20260904-1911.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260904-1911/avdb-20260904-1911.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  修复番号搜索的问题。
+  已支持影片详情里关联影片的订阅。
+  已支持清单搜索和订阅。
   修复收藏的演员只能显示50个，并且没有翻页选项的问题。
-  订阅自动下载的优先级 也可以像DBO这样搞个自动配置的优先级。
   修复导入dbo 的订阅分享时演员头像不显示问题。
   修复部分按钮浅色模式撞色的问题。
   磁力资源添加排序选项，支持日期大小，文件数。
