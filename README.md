@@ -13,15 +13,18 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260905-1113`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260905-1113)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260905-1113/manifest.json)
-- 版本：`20260905-1113`
-- 加密包：[`avdb-20260905-1113.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260905-1113/avdb-20260905-1113.pkg.enc)
+- Release：[`20260905-1529`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260905-1529)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260905-1529/manifest.json)
+- 版本：`20260905-1529`
+- 加密包：[`avdb-20260905-1529.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260905-1529/avdb-20260905-1529.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  优化入库判定逻辑和速度。
+  添加账户VIP检测，非VIP不显示正片播放按钮。
+  最新版块添加磁链更新，发布日期排序。
   添加类别标签。
   修复在线资源搜索弹窗在移动端被遮挡的问题。
   优化评论区资源提取。
@@ -39,9 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   优化最新影片的显示逻辑，可按磁链，字幕排序。
   订阅时可自定义下载工具和路径，编辑演员、系列、片商、清单、番号类会同步修改全部订阅。
   评论按钮不再显示总数，只轻量探测是否有评论来决定是否显示评论胶囊，弹窗和进入详情页依旧显示。
-  添加批量操作订阅内容的功能。
-  添加了订阅检查会显示检查进度和手动停止的接口。
-  订阅窗口类别过滤下拉菜单增加搜索过滤（限定5个可选项）。
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
