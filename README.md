@@ -13,15 +13,16 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260905-1737`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260905-1737)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260905-1737/manifest.json)
-- 版本：`20260905-1737`
-- 加密包：[`avdb-20260905-1737.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260905-1737/avdb-20260905-1737.pkg.enc)
+- Release：[`20260905-1747`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260905-1747)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260905-1747/manifest.json)
+- 版本：`20260905-1747`
+- 加密包：[`avdb-20260905-1747.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260905-1747/avdb-20260905-1747.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  固化Emby Tab地址状态
   添加在线资源影片详情页的标签点击筛选跳转，系列/厂商/导演跳转至专用页。
   添加导演的收藏/订阅。
   修复订阅演员类别过滤的ID覆盖问题。
@@ -41,7 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   磁力资源添加排序选项，支持日期大小，文件数。
   修复 Gfriends 文件树 CDN 下载失败的问题，以后将通过 Release 提供。
   添加演员页。
-  优化筛选类型和日期的显示菜单。
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
