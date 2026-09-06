@@ -13,15 +13,16 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260906-1712`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260906-1712)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260906-1712/manifest.json)
-- 版本：`20260906-1712`
-- 加密包：[`avdb-20260906-1712.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260906-1712/avdb-20260906-1712.pkg.enc)
+- Release：[`20260906-2000`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260906-2000)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260906-2000/manifest.json)
+- 版本：`20260906-2000`
+- 加密包：[`avdb-20260906-2000.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260906-2000/avdb-20260906-2000.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  优化插件的同源策略，避免被Emby 的 CSP 拦截。
   添加多彩开关，可选素色和多彩模式（素色减少彩色效果）。
   剧照补全改用Javdb，R18 只用来获取高清海报和封面。
   统一修复“列表 → 详情 → 返回”的桌面端滚动恢复问题，覆盖在线资源、资源模式、Emby 模式、演员列表及影片详情中的演员入口。
@@ -41,7 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   已支持影片详情里关联影片的订阅。
   已支持清单搜索和订阅。
   修复收藏的演员只能显示50个，并且没有翻页选项的问题。
-  修复导入dbo 的订阅分享时演员头像不显示问题。
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
