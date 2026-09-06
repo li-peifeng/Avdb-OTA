@@ -13,15 +13,16 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260906-2305`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260906-2305)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260906-2305/manifest.json)
-- 版本：`20260906-2305`
-- 加密包：[`avdb-20260906-2305.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260906-2305/avdb-20260906-2305.pkg.enc)
+- Release：[`20260907-0005`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260907-0005)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260907-0005/manifest.json)
+- 版本：`20260907-0005`
+- 加密包：[`avdb-20260907-0005.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260907-0005/avdb-20260907-0005.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  手动删除订阅影片会自动加入例外黑名单，上级重新检查时不再重新订阅。
   修复剧照，封面扩展名和实际图片类型不一致引起的错误。
   优化插件的同源策略，避免被Emby 的 CSP 拦截。
   添加多彩开关，可选素色和多彩模式（素色减少彩色效果）。
@@ -41,7 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   订阅严格模式破解需要明确选择，未选中时不进入匹配，高清可以匹配UHD/4K。
   修复番号搜索的问题。
   已支持影片详情里关联影片的订阅。
-  已支持清单搜索和订阅。
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
