@@ -13,15 +13,16 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260906-0018`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260906-0018)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260906-0018/manifest.json)
-- 版本：`20260906-0018`
-- 加密包：[`avdb-20260906-0018.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260906-0018/avdb-20260906-0018.pkg.enc)
+- Release：[`20260906-0208`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260906-0208)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260906-0208/manifest.json)
+- 版本：`20260906-0208`
+- 加密包：[`avdb-20260906-0208.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260906-0208/avdb-20260906-0208.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  统一修复“列表 → 详情 → 返回”的桌面端滚动恢复问题，覆盖在线资源、资源模式、Emby 模式、演员列表及影片详情中的演员入口。
   订阅管理里的影片订阅也加入入库角标。
   固化Emby Tab地址状态。
   添加在线资源影片详情页的标签点击筛选跳转，系列/厂商/导演跳转至专用页。
@@ -41,7 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   修复导入dbo 的订阅分享时演员头像不显示问题。
   修复部分按钮浅色模式撞色的问题。
   磁力资源添加排序选项，支持日期大小，文件数。
-  修复 Gfriends 文件树 CDN 下载失败的问题，以后将通过 Release 提供。
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
