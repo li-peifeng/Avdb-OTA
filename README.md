@@ -13,15 +13,16 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260907-1450`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260907-1450)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260907-1450/manifest.json)
-- 版本：`20260907-1450`
-- 加密包：[`avdb-20260907-1450.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260907-1450/avdb-20260907-1450.pkg.enc)
+- Release：[`20260907-1714`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260907-1714)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260907-1714/manifest.json)
+- 版本：`20260907-1714`
+- 加密包：[`avdb-20260907-1714.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260907-1714/avdb-20260907-1714.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  修复媒体库数量和 emby 里库实际数量对不上的问题。
   订阅成功通知添加订阅模式和筛选条件的详情。
   手动删除订阅影片会自动加入例外黑名单，上级重新检查时不再重新订阅。
   修复剧照，封面扩展名和实际图片类型不一致引起的错误。
@@ -41,7 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   修复在线资源搜索弹窗在移动端被遮挡的问题。
   优化评论区资源提取。
   订阅严格模式破解需要明确选择，未选中时不进入匹配，高清可以匹配UHD/4K。
-  修复番号搜索的问题。
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
