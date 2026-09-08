@@ -13,15 +13,16 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260908-1652`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260908-1652)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260908-1652/manifest.json)
-- 版本：`20260908-1652`
-- 加密包：[`avdb-20260908-1652.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260908-1652/avdb-20260908-1652.pkg.enc)
+- Release：[`20260908-2014`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260908-2014)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260908-2014/manifest.json)
+- 版本：`20260908-2014`
+- 加密包：[`avdb-20260908-2014.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260908-2014/avdb-20260908-2014.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  优化写真的 CDN 加载，404 时尝试其它 CDN。
   优化欧美资源的番号提取和 Emby/JavDB 匹配。
   修复 115/迅雷的动态目录下载路径问题。
   qb 添加 Avdb 分类标识。
@@ -41,7 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   添加在线资源影片详情页的标签点击筛选跳转，系列/厂商/导演跳转至专用页。
   添加导演的收藏/订阅。
   修复订阅演员类别过滤的ID覆盖问题。
-  优化入库判定逻辑和速度。
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
