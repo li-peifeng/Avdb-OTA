@@ -13,15 +13,14 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260909-1517`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260909-1517)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260909-1517/manifest.json)
-- 版本：`20260909-1517`
-- 加密包：[`avdb-20260909-1517.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260909-1517/avdb-20260909-1517.pkg.enc)
+- Release：[`20260909-1521`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260909-1521)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260909-1521/manifest.json)
+- 版本：`20260909-1521`
+- 加密包：[`avdb-20260909-1521.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260909-1521/avdb-20260909-1521.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
-- 更新方式：`Docker 镜像`
-- 需要更新镜像的文件：`launcher/avdb_launcher.py、launcher/build_keyring.py、launcher/build_ota.py、launcher/crypto.py、launcher/installer.py、launcher/manifest.py、launcher/ota_config.py、launcher/ota_policy.py、launcher/release_signature.py、launcher/remote_update.py、launcher/runtime.py、launcher/sign_manifest.py、launcher/update.py、launcher/versioning.py、requirements.txt`
+- 更新方式：`应用内 OTA`
 - 更新摘要：
   添加订阅调度开关，关闭后只支持手动检查订阅，关闭时也会跳过自动想看同步、排行榜和 TOP 250 的定时任务；这些功能的手动接口仍然保留。
   同步支持 Emby 调用 Javdb 评分。
