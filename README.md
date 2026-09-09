@@ -13,15 +13,17 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260909-1521`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260909-1521)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260909-1521/manifest.json)
-- 版本：`20260909-1521`
-- 加密包：[`avdb-20260909-1521.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260909-1521/avdb-20260909-1521.pkg.enc)
+- Release：[`20260909-1816`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260909-1816)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260909-1816/manifest.json)
+- 版本：`20260909-1816`
+- 加密包：[`avdb-20260909-1816.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260909-1816/avdb-20260909-1816.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  Emby和在线资源列表和详情上添加评分显示。
+  订阅管理全部页面都进行地址固化，防止返回退回第一页的情况。
   添加订阅调度开关，关闭后只支持手动检查订阅，关闭时也会跳过自动想看同步、排行榜和 TOP 250 的定时任务；这些功能的手动接口仍然保留。
   同步支持 Emby 调用 Javdb 评分。
   Emby 模式添加独立入口，可添加到侧边和底部导航栏。
@@ -40,8 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   优化插件的同源策略，避免被Emby 的 CSP 拦截。
   添加多彩开关，可选素色和多彩模式（素色减少彩色效果）。
   剧照补全改用Javdb，R18 只用来获取高清海报和封面。
-  统一修复“列表 → 详情 → 返回”的桌面端滚动恢复问题，覆盖在线资源、资源模式、Emby 模式、演员列表及影片详情中的演员入口。
-  订阅管理里的影片订阅也加入入库角标。
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
