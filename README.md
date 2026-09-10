@@ -13,19 +13,16 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260910-1828`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260910-1828)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260910-1828/manifest.json)
-- 版本：`20260910-1828`
-- 加密包：[`avdb-20260910-1828.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260910-1828/avdb-20260910-1828.pkg.enc)
+- Release：[`20260910-2216`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260910-2216)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260910-2216/manifest.json)
+- 版本：`20260910-2216`
+- 加密包：[`avdb-20260910-2216.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260910-2216/avdb-20260910-2216.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
-  排行榜订阅可选排名范围。
-  新增“收藏的清单”入口和订阅。
-  例外黑名单添加类别过滤。
-  优化Emby入库匹配规则。
+  首页添加影片/演员订阅状态统计。
   Emby和在线资源列表和详情上添加评分显示。
   订阅管理全部页面都进行地址固化，防止返回退回第一页的情况。
   添加订阅调度开关，关闭后只支持手动检查订阅，关闭时也会跳过自动想看同步、排行榜和 TOP 250 的定时任务；这些功能的手动接口仍然保留。
@@ -42,6 +39,9 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   修复媒体库数量和 emby 里库实际数量对不上的问题。
   订阅成功通知添加订阅模式和筛选条件的详情。
   手动删除订阅影片会自动加入例外黑名单，上级重新检查时不再重新订阅。
+  修复剧照，封面扩展名和实际图片类型不一致引起的错误。
+  优化插件的同源策略，避免被Emby 的 CSP 拦截。
+  添加多彩开关，可选素色和多彩模式（素色减少彩色效果）。
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
