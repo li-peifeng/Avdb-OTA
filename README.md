@@ -13,15 +13,18 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260911-0240`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260911-0240)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260911-0240/manifest.json)
-- 版本：`20260911-0240`
-- 加密包：[`avdb-20260911-0240.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260911-0240/avdb-20260911-0240.pkg.enc)
+- Release：[`20260911-1700`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260911-1700)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260911-1700/manifest.json)
+- 版本：`20260911-1700`
+- 加密包：[`avdb-20260911-1700.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260911-1700/avdb-20260911-1700.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  优化订阅判定逻辑，并支持本地磁力资源参与匹配。
+  修复 X1080X 的带 0 补全齐番号的匹配问题。
+  完善下载记录，支持订阅的下载推送记录和筛选。
   默认规则里的下载工具和下载路径修改为全局设置，原设置订阅里选项的已删除。
   修复订阅/编辑时选择浏览自定义下载目录时不生效的问题。
   首页添加影片/演员订阅状态统计。
@@ -39,9 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   现可在设置-个人里自定义菜单内容，可按个人喜好进行排序和开关选项。
   侧边栏和底部导航栏添加订阅管理快捷入口。
   修复媒体库数量和 emby 里库实际数量对不上的问题。
-  订阅成功通知添加订阅模式和筛选条件的详情。
-  手动删除订阅影片会自动加入例外黑名单，上级重新检查时不再重新订阅。
-  修复剧照，封面扩展名和实际图片类型不一致引起的错误。
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
