@@ -13,15 +13,17 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260912-1755`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260912-1755)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260912-1755/manifest.json)
-- 版本：`20260912-1755`
-- 加密包：[`avdb-20260912-1755.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260912-1755/avdb-20260912-1755.pkg.enc)
+- Release：[`20260913-1316`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260913-1316)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260913-1316/manifest.json)
+- 版本：`20260913-1316`
+- 加密包：[`avdb-20260913-1316.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260913-1316/avdb-20260913-1316.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  修复后台挂起后的服务器异常，优化评分获取逻辑。
+  新增了“资源更新通知”开关。
   Telegram Bot 添加资源搜索，可添加到 TG 群。
   黑名单匹配和规则添加位数支持，单个 * 代表任意内容位数，多个 * 代表严格匹配多位数。
   修复对所有 textarea 强制单行高度的问题.
@@ -40,8 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   Emby 模式添加独立入口，可添加到侧边和底部导航栏。
   添加 Telegram AI 助手，可自然语言对话进行查询，下载，订阅。
   优化写真的 CDN 加载，404 时尝试其它 CDN。
-  优化欧美资源的番号提取和 Emby/JavDB 匹配。
-  修复 115/迅雷的动态目录下载路径问题。
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
