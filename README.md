@@ -13,15 +13,16 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260913-1450`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260913-1450)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260913-1450/manifest.json)
-- 版本：`20260913-1450`
-- 加密包：[`avdb-20260913-1450.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260913-1450/avdb-20260913-1450.pkg.enc)
+- Release：[`20260913-1535`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260913-1535)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260913-1535/manifest.json)
+- 版本：`20260913-1535`
+- 加密包：[`avdb-20260913-1535.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260913-1535/avdb-20260913-1535.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  补全在线资源入库标识
   优化演员头像补全的逻辑。
   修复后台挂起后的服务器异常，优化评分获取逻辑。
   新增了“资源更新通知”开关。
@@ -41,7 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   添加订阅调度开关，关闭后只支持手动检查订阅，关闭时也会跳过自动想看同步、排行榜和 TOP 250 的定时任务；这些功能的手动接口仍然保留。
   同步支持 Emby 调用 Javdb 评分。
   Emby 模式添加独立入口，可添加到侧边和底部导航栏。
-  添加 Telegram AI 助手，可自然语言对话进行查询，下载，订阅。
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
