@@ -13,16 +13,16 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260913-1535`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260913-1535)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260913-1535/manifest.json)
-- 版本：`20260913-1535`
-- 加密包：[`avdb-20260913-1535.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260913-1535/avdb-20260913-1535.pkg.enc)
+- Release：[`20260913-1536`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260913-1536)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260913-1536/manifest.json)
+- 版本：`20260913-1536`
+- 加密包：[`avdb-20260913-1536.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260913-1536/avdb-20260913-1536.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
-  补全在线资源入库标识
+  补全在线资源入库标识。
   优化演员头像补全的逻辑。
   修复后台挂起后的服务器异常，优化评分获取逻辑。
   新增了“资源更新通知”开关。
