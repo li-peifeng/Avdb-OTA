@@ -13,17 +13,17 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260914-0151`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260914-0151)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260914-0151/manifest.json)
-- 版本：`20260914-0151`
-- 加密包：[`avdb-20260914-0151.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260914-0151/avdb-20260914-0151.pkg.enc)
+- Release：[`20260914-0152`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260914-0152)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260914-0152/manifest.json)
+- 版本：`20260914-0152`
+- 加密包：[`avdb-20260914-0152.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260914-0152/avdb-20260914-0152.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
   编辑订阅时可直接标记已完成或删除订阅。
-  优化订阅对 -U -C -UC 的匹配逻辑。
+  优化订阅对 -U; -C; -UC; restored; 4k60fps的匹配逻辑。
   补全在线资源入库标识。
   优化演员头像补全的逻辑。
   修复后台挂起后的服务器异常，优化评分获取逻辑。
