@@ -13,16 +13,16 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260913-1739`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260913-1739)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260913-1739/manifest.json)
-- 版本：`20260913-1739`
-- 加密包：[`avdb-20260913-1739.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260913-1739/avdb-20260913-1739.pkg.enc)
+- Release：[`20260914-0109`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260914-0109)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260914-0109/manifest.json)
+- 版本：`20260914-0109`
+- 加密包：[`avdb-20260914-0109.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260914-0109/avdb-20260914-0109.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
-  资源库筛选窗口折叠时不再适用全宽。
+  优化订阅对 -U -C -UC 的匹配逻辑。
   补全在线资源入库标识。
   优化演员头像补全的逻辑。
   修复后台挂起后的服务器异常，优化评分获取逻辑。
