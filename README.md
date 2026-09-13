@@ -13,15 +13,16 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260913-1718`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260913-1718)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260913-1718/manifest.json)
-- 版本：`20260913-1718`
-- 加密包：[`avdb-20260913-1718.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260913-1718/avdb-20260913-1718.pkg.enc)
+- Release：[`20260913-1739`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260913-1739)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260913-1739/manifest.json)
+- 版本：`20260913-1739`
+- 加密包：[`avdb-20260913-1739.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260913-1739/avdb-20260913-1739.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  资源库筛选窗口折叠时不再适用全宽。
   补全在线资源入库标识。
   优化演员头像补全的逻辑。
   修复后台挂起后的服务器异常，优化评分获取逻辑。
@@ -41,7 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   订阅管理全部页面都进行地址固化，防止返回退回第一页的情况。
   添加订阅调度开关，关闭后只支持手动检查订阅，关闭时也会跳过自动想看同步、排行榜和 TOP 250 的定时任务；这些功能的手动接口仍然保留。
   同步支持 Emby 调用 Javdb 评分。
-  Emby 模式添加独立入口，可添加到侧边和底部导航栏。
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
