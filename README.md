@@ -13,15 +13,16 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260915-1324`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260915-1324)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260915-1324/manifest.json)
-- 版本：`20260915-1324`
-- 加密包：[`avdb-20260915-1324.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260915-1324/avdb-20260915-1324.pkg.enc)
+- Release：[`20260915-1736`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260915-1736)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260915-1736/manifest.json)
+- 版本：`20260915-1736`
+- 加密包：[`avdb-20260915-1736.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260915-1736/avdb-20260915-1736.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  修复欧美和FC2番号请求错误引起服务器异常提示的问题。
   优化在线资源的演员简介，从演员映射表补全。
   修复 Emby 设置开关逻辑。
   优化在线资源详情页的操作按钮显示。
@@ -41,7 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   优化订阅判定逻辑，并支持本地磁力资源参与匹配。
   修复 X1080X 的带 0 补全齐番号的匹配问题。
   完善下载记录，支持订阅的下载推送记录和筛选。
-  默认规则里的下载工具和下载路径修改为全局设置，原设置订阅里选项的已删除。
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
