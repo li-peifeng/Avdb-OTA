@@ -13,15 +13,16 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260917-1651`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260917-1651)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260917-1651/manifest.json)
-- 版本：`20260917-1651`
-- 加密包：[`avdb-20260917-1651.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260917-1651/avdb-20260917-1651.pkg.enc)
+- Release：[`20260917-1921`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260917-1921)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260917-1921/manifest.json)
+- 版本：`20260917-1921`
+- 加密包：[`avdb-20260917-1921.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260917-1921/avdb-20260917-1921.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  预览图片时可切换源图/剧照模式。
   优化演员头像补全的逻辑。
   优化在线资源的地址栏固化。
   修复欧美和FC2番号请求错误引起服务器异常提示的问题。
@@ -41,7 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   优化已入库的匹配逻辑，加快显示速度。
   修复检查订阅时可能出现只显示父订阅，而不显示实际影片的进度以及数据库连接池耗尽和 SQLite 写锁的问题。
   优化订阅判定逻辑，并支持本地磁力资源参与匹配。
-  修复 X1080X 的带 0 补全齐番号的匹配问题。
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
