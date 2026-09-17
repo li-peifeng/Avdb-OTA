@@ -13,15 +13,16 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260916-1806`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260916-1806)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260916-1806/manifest.json)
-- 版本：`20260916-1806`
-- 加密包：[`avdb-20260916-1806.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260916-1806/avdb-20260916-1806.pkg.enc)
+- Release：[`20260917-1650`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260917-1650)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260917-1650/manifest.json)
+- 版本：`20260917-1650`
+- 加密包：[`avdb-20260917-1650.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260917-1650/avdb-20260917-1650.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  优化演员头像补全的逻辑。
   优化在线资源的地址栏固化。
   修复欧美和FC2番号请求错误引起服务器异常提示的问题。
   优化在线资源的演员简介，从演员映射表补全。
@@ -32,7 +33,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   编辑订阅时可直接标记已完成或删除订阅。
   优化订阅对 -U; -C; -UC; restored; 4k60fps的匹配逻辑。
   补全在线资源入库标识。
-  优化演员头像补全的逻辑。
   修复后台挂起后的服务器异常，优化评分获取逻辑。
   新增了“资源更新通知”开关。
   Telegram Bot 添加资源搜索，可添加到 TG 群。
