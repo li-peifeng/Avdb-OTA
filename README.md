@@ -13,15 +13,17 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260917-1921`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260917-1921)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260917-1921/manifest.json)
-- 版本：`20260917-1921`
-- 加密包：[`avdb-20260917-1921.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260917-1921/avdb-20260917-1921.pkg.enc)
+- Release：[`20260918-1355`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260918-1355)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260918-1355/manifest.json)
+- 版本：`20260918-1355`
+- 加密包：[`avdb-20260918-1355.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260918-1355/avdb-20260918-1355.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  优化订阅保存与编辑流程。
+  影片/演员下添加批量选择/删除/启用/暂停的选项。
   预览图片时可切换源图/剧照模式。
   优化演员头像补全的逻辑。
   优化在线资源的地址栏固化。
@@ -40,8 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   黑名单匹配和规则添加位数支持，单个 * 代表任意内容位数，多个 * 代表严格匹配多位数。
   修复对所有 textarea 强制单行高度的问题.
   优化已入库的匹配逻辑，加快显示速度。
-  修复检查订阅时可能出现只显示父订阅，而不显示实际影片的进度以及数据库连接池耗尽和 SQLite 写锁的问题。
-  优化订阅判定逻辑，并支持本地磁力资源参与匹配。
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
