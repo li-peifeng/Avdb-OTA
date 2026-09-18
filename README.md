@@ -13,15 +13,16 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260918-1746`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260918-1746)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260918-1746/manifest.json)
-- 版本：`20260918-1746`
-- 加密包：[`avdb-20260918-1746.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260918-1746/avdb-20260918-1746.pkg.enc)
+- Release：[`20260919-0053`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260919-0053)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260919-0053/manifest.json)
+- 版本：`20260919-0053`
+- 加密包：[`avdb-20260919-0053.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260919-0053/avdb-20260919-0053.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  修复115重新扫码显示错误的问题。
   优化运行日志的显示逻辑，修复偶发导致网页崩溃的问题。
   添加快捷订阅，不弹窗直接使用预设值订阅。
   优化订阅保存与编辑流程。
@@ -41,7 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   修复后台挂起后的服务器异常，优化评分获取逻辑。
   新增了“资源更新通知”开关。
   Telegram Bot 添加资源搜索，可添加到 TG 群。
-  黑名单匹配和规则添加位数支持，单个 * 代表任意内容位数，多个 * 代表严格匹配多位数。
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
