@@ -13,15 +13,16 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260922-1555`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260922-1555)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260922-1555/manifest.json)
-- 版本：`20260922-1555`
-- 加密包：[`avdb-20260922-1555.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260922-1555/avdb-20260922-1555.pkg.enc)
+- Release：[`20260922-2251`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260922-2251)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260922-2251/manifest.json)
+- 版本：`20260922-2251`
+- 加密包：[`avdb-20260922-2251.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260922-2251/avdb-20260922-2251.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  添加评论区资源番号验证。
   优化演员映射表更新逻辑，避免如果进行过手动导入后在线更新依旧使用旧数据的问题。
   添加 JavDB Authorization 登录方式。
   在线资源搜索弹窗下拉列表样式优化。
@@ -41,7 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   重名演员管理添加全选推荐命名按钮和一键全部应用推荐的选项。
   编辑订阅时可直接标记已完成或删除订阅。
   优化订阅对 -U; -C; -UC; restored; 4k60fps的匹配逻辑。
-  补全在线资源入库标识。
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
