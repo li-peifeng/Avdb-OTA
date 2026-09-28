@@ -13,15 +13,19 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20260927-1358`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260927-1358)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260927-1358/manifest.json)
-- 版本：`20260927-1358`
-- 加密包：[`avdb-20260927-1358.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260927-1358/avdb-20260927-1358.pkg.enc)
+- Release：[`20260928-1605`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20260928-1605)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260928-1605/manifest.json)
+- 版本：`20260928-1605`
+- 加密包：[`avdb-20260928-1605.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20260928-1605/avdb-20260928-1605.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  补全影片筛选标签。
+  移除分类/标签搜索，添加导演搜索。
+  添加订阅链接类型选项。
+  修复下载记录对手动下载的详情缺失。
   修复订阅对评论区资源 ED2K 的匹配问题。
   新增订阅优先模式，按条件优选下载（高清+中文+破解选择 > 高清+中文 > 高清）。
   修复订阅磁链编码问题。
@@ -38,10 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   优化运行日志的显示逻辑，修复偶发导致网页崩溃的问题。
   添加快捷订阅，不弹窗直接使用预设值订阅。
   优化订阅保存与编辑流程。
-  影片/演员下添加批量选择/删除/启用/暂停的选项。
-  预览图片时可切换源图/剧照模式。
-  优化演员头像补全的逻辑。
-  优化在线资源的地址栏固化。
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
