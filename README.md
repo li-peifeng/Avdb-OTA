@@ -13,15 +13,16 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20261003-1808`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261003-1808)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261003-1808/manifest.json)
-- 版本：`20261003-1808`
-- 加密包：[`avdb-20261003-1808.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261003-1808/avdb-20261003-1808.pkg.enc)
+- Release：[`20261005-1258`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261005-1258)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261005-1258/manifest.json)
+- 版本：`20261005-1258`
+- 加密包：[`avdb-20261005-1258.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261005-1258/avdb-20261005-1258.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  添加文件名黑名单选项
   添加订阅分类导出开关，支持全部订阅类型
   添加订阅来源独立开关
   添加订阅影片/演员/成功页面搜索筛选功能
@@ -41,7 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   添加本地字幕目录配置选项，仅用于显示本地匹配的字幕
   增加 Telegram Bot 接受指令开关，可接受 /a, /s, 并支持解析磁力和 ED2K 链接
   搜索结果增加结果筛选
-  修复收藏清单显示错误的问题
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
