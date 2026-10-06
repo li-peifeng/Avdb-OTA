@@ -13,16 +13,16 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20261006-1319`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261006-1319)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261006-1319/manifest.json)
-- 版本：`20261006-1319`
-- 加密包：[`avdb-20261006-1319.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261006-1319/avdb-20261006-1319.pkg.enc)
+- Release：[`20261006-1643`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261006-1643)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261006-1643/manifest.json)
+- 版本：`20261006-1643`
+- 加密包：[`avdb-20261006-1643.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261006-1643/avdb-20261006-1643.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
-  • 支持演员动态目录下载
+  • 支持演员动态目录下载（演员动态目录现在与 设置 → 在线账户 → JavDB 账户 →「详情页只显示女演员」 联动使用同一个开关）
   • 订阅调度支持 Cron 高级调度模式
   • 修复剧照显示排序问题
   • 添加 X1080X 普通网页/Archiver 切换选项
