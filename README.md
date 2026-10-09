@@ -13,15 +13,16 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20261009-1703`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261009-1703)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261009-1703/manifest.json)
-- 版本：`20261009-1703`
-- 加密包：[`avdb-20261009-1703.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261009-1703/avdb-20261009-1703.pkg.enc)
+- Release：[`20261009-1718`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261009-1718)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261009-1718/manifest.json)
+- 版本：`20261009-1718`
+- 加密包：[`avdb-20261009-1718.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261009-1718/avdb-20261009-1718.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  • 为订阅编辑添加完成和删除按钮逻辑
   • 修复一些 UI 溢出的小问题
   • 扩展演员头像可选写真内容
   • 修复 core dump 影响启动的问题
@@ -41,7 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   • 添加 OpenList/Aria2 下载工具支持
   • 添加爬取任务独立通知开关
   • 添加 Telegram Bot 图片遮罩开关，可分别设置私聊和群聊
-  • 添加订阅成功项批量删除功能，删除后可重新下载
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
