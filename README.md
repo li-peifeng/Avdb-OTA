@@ -13,15 +13,18 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20261014-0042`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261014-0042)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261014-0042/manifest.json)
-- 版本：`20261014-0042`
-- 加密包：[`avdb-20261014-0042.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261014-0042/avdb-20261014-0042.pkg.enc)
+- Release：[`20261014-0043`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261014-0043)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261014-0043/manifest.json)
+- 版本：`20261014-0043`
+- 加密包：[`avdb-20261014-0043.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261014-0043/avdb-20261014-0043.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  • 修复 TRAWL sessionId 格式问题
+  • 修复 AVDB 向 TRAWL 发送了合法的 sessionId，但没有先创建这个会话的问题
+  • 优化演员订阅标签滚动
   • 为订阅编辑添加完成和删除按钮逻辑
   • 修复一些 UI 溢出的小问题
   • 扩展演员头像可选写真内容
@@ -39,9 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   • 添加订阅来源独立开关
   • 添加订阅影片/演员/成功页面搜索筛选功能
   • 修复订阅标签繁简匹配
-  • 添加 OpenList/Aria2 下载工具支持
-  • 添加爬取任务独立通知开关
-  • 添加 Telegram Bot 图片遮罩开关，可分别设置私聊和群聊
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
