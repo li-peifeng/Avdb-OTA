@@ -13,15 +13,17 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20261014-0043`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261014-0043)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261014-0043/manifest.json)
-- 版本：`20261014-0043`
-- 加密包：[`avdb-20261014-0043.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261014-0043/avdb-20261014-0043.pkg.enc)
+- Release：[`20261014-1628`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261014-1628)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261014-1628/manifest.json)
+- 版本：`20261014-1628`
+- 加密包：[`avdb-20261014-1628.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261014-1628/avdb-20261014-1628.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  • 在线演员关联影片添加排序选项
+  • 增加 JavDB 新种订阅
   • 修复 TRAWL sessionId 格式问题
   • 修复 AVDB 向 TRAWL 发送了合法的 sessionId，但没有先创建这个会话的问题
   • 优化演员订阅标签滚动
@@ -40,8 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   • 添加文件名黑名单选项
   • 添加订阅分类导出开关，支持全部订阅类型
   • 添加订阅来源独立开关
-  • 添加订阅影片/演员/成功页面搜索筛选功能
-  • 修复订阅标签繁简匹配
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
