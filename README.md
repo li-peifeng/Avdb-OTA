@@ -13,16 +13,16 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20261022-1652`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261022-1652)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261022-1652/manifest.json)
-- 版本：`20261022-1652`
-- 加密包：[`avdb-20261022-1652.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261022-1652/avdb-20261022-1652.pkg.enc)
+- Release：[`20261022-1700`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261022-1700)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261022-1700/manifest.json)
+- 版本：`20261022-1700`
+- 加密包：[`avdb-20261022-1700.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261022-1700/avdb-20261022-1700.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
-  优化取链和发布速度
+  优化取链和发布速度和排版
   TG 资源监控支持自动取链功能并转发
   补全通知链接详情
   支持监控 TG 频道并自动下载资源
