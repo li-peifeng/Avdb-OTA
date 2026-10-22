@@ -13,15 +13,16 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20261022-1633`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261022-1633)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261022-1633/manifest.json)
-- 版本：`20261022-1633`
-- 加密包：[`avdb-20261022-1633.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261022-1633/avdb-20261022-1633.pkg.enc)
+- Release：[`20261022-1652`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261022-1652)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261022-1652/manifest.json)
+- 版本：`20261022-1652`
+- 加密包：[`avdb-20261022-1652.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261022-1652/avdb-20261022-1652.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  优化取链和发布速度
   TG 资源监控支持自动取链功能并转发
   补全通知链接详情
   支持监控 TG 频道并自动下载资源
@@ -41,7 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   优化演员订阅标签滚动
   为订阅编辑添加完成和删除按钮逻辑
   修复一些 UI 溢出的小问题
-  扩展演员头像可选写真内容
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
