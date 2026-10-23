@@ -13,15 +13,16 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20261023-1942`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261023-1942)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261023-1942/manifest.json)
-- 版本：`20261023-1942`
-- 加密包：[`avdb-20261023-1942.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261023-1942/avdb-20261023-1942.pkg.enc)
+- Release：[`20261023-2000`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261023-2000)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261023-2000/manifest.json)
+- 版本：`20261023-2000`
+- 加密包：[`avdb-20261023-2000.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261023-2000/avdb-20261023-2000.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  导出添加手动匹配番号选项
   TG 监控添加清空记录和其它筛选功能
   优化 LTX 版块下载规则和工具的适配
   LTX 版块接入搜索和添加番号标识
@@ -41,7 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   修复 Top 250 订阅选择特定年份时被默认订阅规则约束而发现不了资源的问题
   通知支持 Bark
   强化 AI 助手自然语言功能
-  卡片角标显示下载状态
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
