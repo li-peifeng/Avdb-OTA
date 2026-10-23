@@ -13,15 +13,19 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20261023-1629`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261023-1629)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261023-1629/manifest.json)
-- 版本：`20261023-1629`
-- 加密包：[`avdb-20261023-1629.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261023-1629/avdb-20261023-1629.pkg.enc)
+- Release：[`20261023-1759`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261023-1759)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261023-1759/manifest.json)
+- 版本：`20261023-1759`
+- 加密包：[`avdb-20261023-1759.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261023-1759/avdb-20261023-1759.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  TG 监控添加清空记录和其它筛选功能
+  优化 LTX 版块下载规则和工具的适配
+  LTX 版块接入搜索和添加番号标识
+  删除 主播精选/动漫原创/探花精选/韩国主播等版块
   优化 TG 监控取链逻辑
   降低 TG 请求速率避免引发限流
   修复 TG 监控取链由于超时卡住的问题
@@ -38,10 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   通知支持 Bark
   强化 AI 助手自然语言功能
   卡片角标显示下载状态
-  在线资源影片卡片支持添加多选订阅
-  在线演员关联影片添加排序选项
-  增加 JavDB 新种订阅
-  修复 TRAWL sessionId 格式问题
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
