@@ -13,15 +13,18 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20261023-2059`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261023-2059)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261023-2059/manifest.json)
-- 版本：`20261023-2059`
-- 加密包：[`avdb-20261023-2059.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261023-2059/avdb-20261023-2059.pkg.enc)
+- Release：[`20261024-1151`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261024-1151)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261024-1151/manifest.json)
+- 版本：`20261024-1151`
+- 加密包：[`avdb-20261024-1151.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261024-1151/avdb-20261024-1151.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  优化监控 TG 频道的内存占用
+  检测 TG 频道里的自制标签
+  优化修改信息后重新匹配的逻辑
   导出添加手动匹配番号选项
   TG 监控添加清空记录和其它筛选功能
   优化 LTX 版块下载规则和工具的适配
@@ -39,9 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   优化TG Bot AI 说明和排版
   X1080X 默认域名改成 x999x.me，国内用户可手动修改至 1080xin.com
   修复 R18 因容器意外重启残留临时文件的回收问题
-  修复 Top 250 订阅选择特定年份时被默认订阅规则约束而发现不了资源的问题
-  通知支持 Bark
-  强化 AI 助手自然语言功能
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
