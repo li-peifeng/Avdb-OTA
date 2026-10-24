@@ -13,15 +13,17 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20261024-1603`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261024-1603)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261024-1603/manifest.json)
-- 版本：`20261024-1603`
-- 加密包：[`avdb-20261024-1603.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261024-1603/avdb-20261024-1603.pkg.enc)
+- Release：[`20261024-1734`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261024-1734)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261024-1734/manifest.json)
+- 版本：`20261024-1734`
+- 加密包：[`avdb-20261024-1734.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261024-1734/avdb-20261024-1734.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  修复CD2下载LTX版块提示接口返回异常的问题
+  自动发现类订阅可按分类独立创建自定义下载目录
   增加强制退出 TG 账号选项
   优化 Javtxt 加载可能阻塞详情页的问题
   优化监控 TG 频道的内存占用
@@ -40,8 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   TG 资源监控支持自动取链功能并转发
   补全通知链接详情
   支持监控 TG 频道并自动下载资源
-  支持添加企业微信群机器人通知
-  优化TG Bot AI 说明和排版
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
