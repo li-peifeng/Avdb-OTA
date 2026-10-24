@@ -13,15 +13,18 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20261024-1911`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261024-1911)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261024-1911/manifest.json)
-- 版本：`20261024-1911`
-- 加密包：[`avdb-20261024-1911.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261024-1911/avdb-20261024-1911.pkg.enc)
+- Release：[`20261024-2320`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261024-2320)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261024-2320/manifest.json)
+- 版本：`20261024-2320`
+- 加密包：[`avdb-20261024-2320.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261024-2320/avdb-20261024-2320.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  在线资源同步展示 LTX 破解版块资源
+  订阅支持 LTX 破解资源优先模式
+  修复 LTX 导出：部分链接来源或番号不一致的警告问题
   修复CD2下载LTX版块提示接口返回异常的问题
   自动发现类订阅可按分类独立创建自定义下载目录
   增加强制退出 TG 账号选项
@@ -39,9 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   修复 TG 监控取链由于超时卡住的问题
   增加 LTX 版块并增加导入导出的功能
   优化取链和发布速度和排版
-  TG 资源监控支持自动取链功能并转发
-  补全通知链接详情
-  支持监控 TG 频道并自动下载资源
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
