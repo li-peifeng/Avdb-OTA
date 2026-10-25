@@ -13,15 +13,16 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20261025-1350`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261025-1350)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261025-1350/manifest.json)
-- 版本：`20261025-1350`
-- 加密包：[`avdb-20261025-1350.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261025-1350/avdb-20261025-1350.pkg.enc)
+- Release：[`20261026-0037`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261026-0037)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261026-0037/manifest.json)
+- 版本：`20261026-0037`
+- 加密包：[`avdb-20261026-0037.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261026-0037/avdb-20261026-0037.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  修复一些 UI 小问题，调整标签显示效果
   首页卡片排序优化
   海报和轮播图跟随开关维护，关闭的情况下不再主动互取
   补全 FT.A.V 的原盘/原档标签
@@ -41,7 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   TG 监控添加清空记录和其它筛选功能
   优化 LTX 版块下载规则和工具的适配
   LTX 版块接入搜索和添加番号标识
-  删除 主播精选/动漫原创/探花精选/韩国主播等版块
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
