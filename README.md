@@ -13,16 +13,17 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20261028-1520`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261028-1520)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261028-1520/manifest.json)
-- 版本：`20261028-1520`
-- 加密包：[`avdb-20261028-1520.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261028-1520/avdb-20261028-1520.pkg.enc)
+- Release：[`20261028-1831`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261028-1831)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261028-1831/manifest.json)
+- 版本：`20261028-1831`
+- 加密包：[`avdb-20261028-1831.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261028-1831/avdb-20261028-1831.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
-  优化发布去重逻辑
+  分离 LTX 版块的更新和发布流程
+  优化TG监控发布去重逻辑和4K标签传参
   添加取链番号名称格式化选项
   优化 TG API 的会话逻辑
   修复番号核对并发布取链结果
@@ -41,7 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   自动发现类订阅可按分类独立创建自定义下载目录
   增加强制退出 TG 账号选项
   优化 Javtxt 加载可能阻塞详情页的问题
-  优化监控 TG 频道的内存占用
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
