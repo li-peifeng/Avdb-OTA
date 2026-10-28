@@ -13,15 +13,16 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20261028-1301`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261028-1301)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261028-1301/manifest.json)
-- 版本：`20261028-1301`
-- 加密包：[`avdb-20261028-1301.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261028-1301/avdb-20261028-1301.pkg.enc)
+- Release：[`20261028-1520`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261028-1520)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261028-1520/manifest.json)
+- 版本：`20261028-1520`
+- 加密包：[`avdb-20261028-1520.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261028-1520/avdb-20261028-1520.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  优化发布去重逻辑
   添加取链番号名称格式化选项
   优化 TG API 的会话逻辑
   修复番号核对并发布取链结果
@@ -41,7 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   增加强制退出 TG 账号选项
   优化 Javtxt 加载可能阻塞详情页的问题
   优化监控 TG 频道的内存占用
-  检测 TG 频道里的自制标签
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
