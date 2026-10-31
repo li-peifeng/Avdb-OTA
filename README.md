@@ -13,15 +13,16 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20261030-1826`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261030-1826)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261030-1826/manifest.json)
-- 版本：`20261030-1826`
-- 加密包：[`avdb-20261030-1826.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261030-1826/avdb-20261030-1826.pkg.enc)
+- Release：[`20261031-0704`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261031-0704)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261031-0704/manifest.json)
+- 版本：`20261031-0704`
+- 加密包：[`avdb-20261031-0704.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261031-0704/avdb-20261031-0704.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  优化数据库文章查询索引
   添加 LTX 版块的#98T和#自制标签
   分离 LTX 版块的更新和发布流程
   优化TG监控发布去重逻辑和4K标签传参
@@ -41,7 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   修复 LTX 导出：部分链接来源或番号不一致的警告问题
   修复CD2下载LTX版块提示接口返回异常的问题
   自动发现类订阅可按分类独立创建自定义下载目录
-  增加强制退出 TG 账号选项
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
