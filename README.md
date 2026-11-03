@@ -13,15 +13,21 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20261103-0258`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261103-0258)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261103-0258/manifest.json)
-- 版本：`20261103-0258`
-- 加密包：[`avdb-20261103-0258.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261103-0258/avdb-20261103-0258.pkg.enc)
+- Release：[`20261103-1728`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261103-1728)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261103-1728/manifest.json)
+- 版本：`20261103-1728`
+- 加密包：[`avdb-20261103-1728.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261103-1728/avdb-20261103-1728.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  添加下载记录可重新提交功能
+  筛选中的「类目」现在支持：
+  LTX 版块：98T、自制
+  FT.A.V 版块：原档、破解
+  支持 NGi 自定义演员映射表，并应用相同的演员命名逻辑
+  按站点拆分资源库发布绑定
   修复在线的收藏页面分页记忆
   修复 TG 监控的 BOT 权限，避免影响源内容
   修复 LTX 和 FT.A.V 丢失番号的问题，升级后请重新刷新一次番号
@@ -36,12 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   修复番号核对并发布取链结果
   自动更新添加立即更新的选项
   订阅规则添加网站站点选项
-  修复一些 UI 小问题，调整标签显示效果
-  首页卡片排序优化
-  海报和轮播图跟随开关维护，关闭的情况下不再主动互取
-  补全 FT.A.V 的原盘/原档标签
-  添加 FT.A.V 资源站点
-  频道监控及导出同步支持 FT.A.V
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
