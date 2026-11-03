@@ -13,10 +13,10 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20261103-0149`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261103-0149)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261103-0149/manifest.json)
-- 版本：`20261103-0149`
-- 加密包：[`avdb-20261103-0149.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261103-0149/avdb-20261103-0149.pkg.enc)
+- Release：[`20261103-0207`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261103-0207)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261103-0207/manifest.json)
+- 版本：`20261103-0207`
+- 加密包：[`avdb-20261103-0207.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261103-0207/avdb-20261103-0207.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
