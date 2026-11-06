@@ -13,15 +13,17 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20261106-0159`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261106-0159)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261106-0159/manifest.json)
-- 版本：`20261106-0159`
-- 加密包：[`avdb-20261106-0159.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261106-0159/avdb-20261106-0159.pkg.enc)
+- Release：[`20261106-1731`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261106-1731)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261106-1731/manifest.json)
+- 版本：`20261106-1731`
+- 加密包：[`avdb-20261106-1731.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261106-1731/avdb-20261106-1731.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  修复全量包发布的逻辑，添加按时发送的选项
+  优化 TG 监控登录
   优化 Emby 加载速度
   修复 TG 监控推送历史消息
   可保存 X1080X 用户信息，登录失效时自动尝试
@@ -40,8 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   添加 LTX 版块的#98T和#自制标签
   分离 LTX 版块的更新和发布流程
   优化TG监控发布去重逻辑和4K标签传参
-  添加取链番号名称格式化选项
-  优化 TG API 的会话逻辑
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
