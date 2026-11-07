@@ -13,16 +13,16 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20261107-1900`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261107-1900)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261107-1900/manifest.json)
-- 版本：`20261107-1900`
-- 加密包：[`avdb-20261107-1900.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261107-1900/avdb-20261107-1900.pkg.enc)
+- Release：[`20261107-1901`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261107-1901)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261107-1901/manifest.json)
+- 版本：`20261107-1901`
+- 加密包：[`avdb-20261107-1901.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261107-1901/avdb-20261107-1901.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
-  修复右侧菜单被筛选弹窗遮盖丢失鼠标点击的问题
+  修复左侧菜单被筛选弹窗遮盖丢失鼠标点击的问题
   优化登录时密码管理器的兼容性
   已下载/已入库 添加更严格的匹配条件
   演员订阅采用“记住用户删除选择”的方案
