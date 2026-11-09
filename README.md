@@ -13,16 +13,17 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20261109-1808`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261109-1808)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261109-1808/manifest.json)
-- 版本：`20261109-1808`
-- 加密包：[`avdb-20261109-1808.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261109-1808/avdb-20261109-1808.pkg.enc)
+- Release：[`20261109-1926`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261109-1926)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261109-1926/manifest.json)
+- 版本：`20261109-1926`
+- 加密包：[`avdb-20261109-1926.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261109-1926/avdb-20261109-1926.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
-  修复资源被误判已删除的逻辑漏洞
+  添加筛选 “已入库”的“媒体库”选项
+  修复资源被误判已删除的逻辑漏洞，会重置已删除标识
   统一同号入库角标交互和显示媒体库名
   修复增量资源包立即更新的卡住问题
   修复手机端 TOTP 粘贴只有最后一位的问题
@@ -41,7 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   筛选中的「类目」现在支持：
   LTX 版块：98T、自制
   FT.A.V 版块：原档、破解
-  支持 NGi 自定义演员映射表，并应用相同的演员命名逻辑
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
