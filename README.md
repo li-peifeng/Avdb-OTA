@@ -13,10 +13,10 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20261111-1836`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261111-1836)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261111-1836/manifest.json)
-- 版本：`20261111-1836`
-- 加密包：[`avdb-20261111-1836.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261111-1836/avdb-20261111-1836.pkg.enc)
+- Release：[`20261112-0056`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261112-0056)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261112-0056/manifest.json)
+- 版本：`20261112-0056`
+- 加密包：[`avdb-20261112-0056.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261112-0056/avdb-20261112-0056.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
@@ -24,6 +24,7 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 - 更新摘要：
   调整 TG 频道监控导出流程，番号、标题、标签从频道提取，图片按 R18 → 频道图片 → JavDB 的顺序补充，缺图不再影响信息齐全的资源导出
   资源图片优先使用 R18 高清封面、海报和剧照，无高清图时保留有效的 800 像素封面，过滤占位图及小于 30KiB 的图片；修复同番号 DVD 记录遮挡数字版大图及频道资源跳过补全的问题，JavDB 登录失效后暂停图片兜底，重新登录后恢复
+  修复图片预览首张图片失效时停留空白的问题，自动选择后续有效图片，并过滤 JavDB 兜底列表中无效的 R18 封面
   定时订阅执行中检测到 JavDB 强制登录或登录失效，会中止本轮检查、暂停后续 JavDB 订阅调度，并通过系统已启用的通知渠道推送提醒
   可选调整订阅已入库检查媒体库范围
   添加筛选 “已入库”的“媒体库”选项
@@ -41,7 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   优化 TG 监控登录
   优化 Emby 加载速度
   修复 TG 监控推送历史消息
-  可保存 X1080X 用户信息，登录失效时自动尝试
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
