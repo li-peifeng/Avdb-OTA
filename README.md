@@ -13,15 +13,16 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20261109-1955`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261109-1955)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261109-1955/manifest.json)
-- 版本：`20261109-1955`
-- 加密包：[`avdb-20261109-1955.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261109-1955/avdb-20261109-1955.pkg.enc)
+- Release：[`20261111-1307`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261111-1307)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261111-1307/manifest.json)
+- 版本：`20261111-1307`
+- 加密包：[`avdb-20261111-1307.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261111-1307/avdb-20261111-1307.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  定时订阅执行中检测到 JavDB 强制登录或登录失效，会中止本轮检查、暂停后续 JavDB 订阅调度，并通过系统已启用的通知渠道推送提醒
   可选调整订阅已入库检查媒体库范围
   添加筛选 “已入库”的“媒体库”选项
   修复资源被误判已删除的逻辑漏洞，会重置已删除标识
@@ -41,7 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   可保存 X1080X 用户信息，登录失效时自动尝试
   添加下载记录可重新提交功能
   筛选中的「类目」现在支持：
-  LTX 版块：98T、自制
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
