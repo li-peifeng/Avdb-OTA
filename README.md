@@ -13,15 +13,16 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20261113-1322`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261113-1322)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261113-1322/manifest.json)
-- 版本：`20261113-1322`
-- 加密包：[`avdb-20261113-1322.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261113-1322/avdb-20261113-1322.pkg.enc)
+- Release：[`20261113-1455`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261113-1455)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261113-1455/manifest.json)
+- 版本：`20261113-1455`
+- 加密包：[`avdb-20261113-1455.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261113-1455/avdb-20261113-1455.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  演员订阅通过公开列表获取番号，未登录或登录失效时照常匹配本地资源，登录有效时按资源来源开关和优先级匹配本地、在线磁链及评论区资源；分类过滤、动态目录与完成通知无需额外请求影片详情
   修复 TG 监控图片展示问题
   同步支持 NGi 的 strm Size 提取和匹配
   修复 actor 订阅动态路径报错
@@ -41,7 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   修复左侧菜单被筛选弹窗遮盖丢失鼠标点击的问题
   优化登录时密码管理器的兼容性
   已下载/已入库 添加更严格的匹配条件
-  演员订阅采用“记住用户删除选择”的方案
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
