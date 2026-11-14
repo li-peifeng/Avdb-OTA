@@ -13,17 +13,19 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20261114-1626`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261114-1626)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261114-1626/manifest.json)
-- 版本：`20261114-1626`
-- 加密包：[`avdb-20261114-1626.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261114-1626/avdb-20261114-1626.pkg.enc)
+- Release：[`20261114-1818`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261114-1818)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261114-1818/manifest.json)
+- 版本：`20261114-1818`
+- 加密包：[`avdb-20261114-1818.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261114-1818/avdb-20261114-1818.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  资源已入库采用分层匹配：优先精确大小，磁力资源支持自定义附带文件大小容差，默认 30 MB，设为 0 关闭；容差唯一命中直接显示已入库，多版本不明确时保留同号入库，ED2K 保持严格匹配；保存 Emby 设置或完成媒体库刷新后更新资源列表状态
   修复演员信息补全按姓名查找 Emby 人物时，未找到同名演员却误用首条搜索结果的问题，避免将其他演员作为补全目标
   修复直接发送 ED2K 或磁力链接给 TG 机器人下载后未显示已下载的问题，按资源 hash 匹配已有资源，ED2K 同时核对文件大小，失败提交不标记已下载
+  TG 频道检查时间、来源删除核验游标和导出内容快照持久保存，更新重启后接续未完成任务，已完成且内容未变的资源不重复自动导出；资源导出计数按等待、已处理、异常分别统计
   TG 频道源帖删除后，按具体资源指纹同步移除对应导出资源，保留同番号其它版本及仍有有效来源的资源；支持离线补查，后续增量包和全量包同步携带删除标记
   未登录 JAVDB 也可以进行演员订阅
   优化未登录时禁止再去探测在线影片详情页
@@ -40,8 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   调整 TG 频道监控导出流程，番号、标题、标签从频道提取，图片按 R18 → 频道图片 → JavDB 的顺序补充，缺图不再影响信息齐全的资源导出
   资源图片优先使用 R18 高清封面、海报和剧照，无高清图时保留有效的 800 像素封面，过滤占位图及小于 30KiB 的图片；修复同番号 DVD 记录遮挡数字版大图及频道资源跳过补全的问题，JavDB 登录失效后暂停图片兜底，重新登录后恢复
   修复图片预览首张图片失效时停留空白的问题，自动选择后续有效图片，并过滤 JavDB 兜底列表中无效的 R18 封面
-  定时订阅执行中检测到 JavDB 强制登录或登录失效，会中止本轮检查、暂停后续 JavDB 订阅调度，并通过系统已启用的通知渠道推送提醒
-  可选调整订阅已入库检查媒体库范围
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
