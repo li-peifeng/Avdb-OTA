@@ -13,15 +13,21 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20261113-1637`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261113-1637)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261113-1637/manifest.json)
-- 版本：`20261113-1637`
-- 加密包：[`avdb-20261113-1637.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261113-1637/avdb-20261113-1637.pkg.enc)
+- Release：[`20261114-1626`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261114-1626)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261114-1626/manifest.json)
+- 版本：`20261114-1626`
+- 加密包：[`avdb-20261114-1626.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261114-1626/avdb-20261114-1626.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  修复演员信息补全按姓名查找 Emby 人物时，未找到同名演员却误用首条搜索结果的问题，避免将其他演员作为补全目标
+  修复直接发送 ED2K 或磁力链接给 TG 机器人下载后未显示已下载的问题，按资源 hash 匹配已有资源，ED2K 同时核对文件大小，失败提交不标记已下载
+  TG 频道源帖删除后，按具体资源指纹同步移除对应导出资源，保留同番号其它版本及仍有有效来源的资源；支持离线补查，后续增量包和全量包同步携带删除标记
+  未登录 JAVDB 也可以进行演员订阅
+  优化未登录时禁止再去探测在线影片详情页
+  资源卡片和预览封面按 R18 → 原图 → JavDB 逐个尝试，全部候选失效后卡片才显示默认图；保留原封面及 TG 频道原图，已导出资源的 R18 图片失效时自动回退频道原图和 JavDB
   TG 用户账号退出或强制退出时，可分别选择保留取链记录、发布记录和处理记录，默认全部保留，并保留对应去重信息
   所有影片订阅统一支持未登录或登录失效时匹配本地资源；登录有效时按资源来源开关和优先级查询在线磁链及评论区资源，登录失效不再阻断本地影片订阅检查，演员作品列表仍匿名获取
   演员订阅通过公开列表获取番号，未登录或登录失效时照常匹配本地资源，登录有效时按资源来源开关和优先级匹配本地、在线磁链及评论区资源；分类过滤、动态目录与完成通知无需额外请求影片详情
@@ -36,12 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   修复图片预览首张图片失效时停留空白的问题，自动选择后续有效图片，并过滤 JavDB 兜底列表中无效的 R18 封面
   定时订阅执行中检测到 JavDB 强制登录或登录失效，会中止本轮检查、暂停后续 JavDB 订阅调度，并通过系统已启用的通知渠道推送提醒
   可选调整订阅已入库检查媒体库范围
-  添加筛选 “已入库”的“媒体库”选项
-  修复资源被误判已删除的逻辑漏洞，会重置已删除标识
-  统一同号入库角标交互和显示媒体库名
-  修复增量资源包立即更新的卡住问题
-  修复手机端 TOTP 粘贴只有最后一位的问题
-  修复左侧菜单被筛选弹窗遮盖丢失鼠标点击的问题
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
