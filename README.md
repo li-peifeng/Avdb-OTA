@@ -13,15 +13,18 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20261116-0140`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261116-0140)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261116-0140/manifest.json)
-- 版本：`20261116-0140`
-- 加密包：[`avdb-20261116-0140.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261116-0140/avdb-20261116-0140.pkg.enc)
+- Release：[`20261117-0033`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261117-0033)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261117-0033/manifest.json)
+- 版本：`20261117-0033`
+- 加密包：[`avdb-20261117-0033.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261117-0033/avdb-20261117-0033.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  新增演员页面 ID 映射与 JSON 导入导出，浏览演员页时自动补全映射；未登录 JavDB 也可按姓名或别名搜索本地已收录演员并查看作品
+  修复设置类别黑名单后，未登录或登录失效时演员订阅检查失败、误提示重新登录的问题
+  优化搜索逻辑（番号/关键字）
   手动全量更新支持多选
   修正番号格式化逻辑
   资源已入库采用分层匹配：优先精确大小，磁力资源支持自定义附带文件大小容差，默认 30 MB，设为 0 关闭；容差唯一命中直接显示已入库，多版本不明确时保留同号入库，ED2K 保持严格匹配；保存 Emby 设置或完成媒体库刷新后更新资源列表状态
@@ -39,9 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   同步支持 NGi 的 strm Size 提取和匹配
   修复 actor 订阅动态路径报错
   修复 115 订阅使用“目录 CID/{actor}”等动态子目录时被误判为下载目录无效的问题
-  修复 TG 监控由于带有 ：号而漏提取标题的问题
-  修复 TG 监控导出将 R18 小图误判为有效图片、跳过频道原图，导致资源图片预览为空的问题；重新导出会重新校验旧图片缓存
-  调整 TG 频道监控导出流程，番号、标题、标签从频道提取，图片按 R18 → 频道图片 → JavDB 的顺序补充，缺图不再影响信息齐全的资源导出
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
