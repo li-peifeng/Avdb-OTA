@@ -13,15 +13,16 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20261117-2013`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261117-2013)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261117-2013/manifest.json)
-- 版本：`20261117-2013`
-- 加密包：[`avdb-20261117-2013.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261117-2013/avdb-20261117-2013.pkg.enc)
+- Release：[`20261117-2023`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261117-2023)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261117-2023/manifest.json)
+- 版本：`20261117-2023`
+- 加密包：[`avdb-20261117-2023.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261117-2023/avdb-20261117-2023.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 更新方式：`应用内 OTA`
 - 更新摘要：
+  在线资源未登录或登录失效时隐藏类别、TOP 250、排行榜、热播和热门标签，登录后恢复显示
   修复演员映射在线更新时旧页面 ID 回填与在线映射冲突、导致整次更新失败的问题
   新增演员页面 ID 映射与 JSON 导入，浏览演员页时自动补全映射；未登录 JavDB 也可按姓名或别名搜索本地已收录演员并查看作品
   修复设置类别黑名单后，未登录或登录失效时演员订阅检查失败、误提示重新登录的问题
@@ -41,7 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   演员订阅通过公开列表获取番号，未登录或登录失效时照常匹配本地资源，登录有效时按资源来源开关和优先级匹配本地、在线磁链及评论区资源；分类过滤、动态目录与完成通知无需额外请求影片详情
   修复 TG 监控图片展示问题
   同步支持 NGi 的 strm Size 提取和匹配
-  修复 actor 订阅动态路径报错
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
