@@ -13,15 +13,17 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20261117-2334`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261117-2334)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261117-2334/manifest.json)
-- 版本：`20261117-2334`
-- 加密包：[`avdb-20261117-2334.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261117-2334/avdb-20261117-2334.pkg.enc)
+- Release：[`20261118-0000`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261118-0000)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261118-0000/manifest.json)
+- 版本：`20261118-0000`
+- 加密包：[`avdb-20261118-0000.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261118-0000/avdb-20261118-0000.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
-- 更新方式：`应用内 OTA`
+- 应用内 OTA 最低镜像版本：`20261118-0000`
+- 需要更新镜像的文件：`launcher/build_ota.py、launcher/installer.py、launcher/manifest.py、launcher/ota_policy.py、launcher/remote_update.py、launcher/update.py`
 - 更新摘要：
+  旧版 Docker 镜像需先升级到 20261118-0000 或更高版本，之后即可继续使用应用内更新。
   统一影片、演员和清单订阅的未登录提示，缩短提示区域并增加与订阅卡片的间距。
   未登录 JavDB 时，订阅管理跳过在线类别请求并提示登录，本地订阅可继续使用，错误提示不再显示整页 HTML。
   降低资源包导入和设置备份的内存占用，导出边压缩边加密，发布包生成失败时保留上一版文件
@@ -41,7 +43,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   TG 频道源帖删除后，按具体资源指纹同步移除对应导出资源，保留同番号其它版本及仍有有效来源的资源；支持离线补查，后续增量包和全量包同步携带删除标记
   未登录 JAVDB 也可以进行演员订阅
   优化未登录时禁止再去探测在线影片详情页
-  资源卡片和预览封面按 R18 → 原图 → JavDB 逐个尝试，全部候选失效后卡片才显示默认图；保留原封面及 TG 频道原图，已导出资源的 R18 图片失效时自动回退频道原图和 JavDB
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
