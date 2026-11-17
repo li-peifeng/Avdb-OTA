@@ -13,15 +13,21 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20261117-2023`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261117-2023)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261117-2023/manifest.json)
-- 版本：`20261117-2023`
-- 加密包：[`avdb-20261117-2023.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261117-2023/avdb-20261117-2023.pkg.enc)
+- Release：[`20261117-2328`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261117-2328)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261117-2328/manifest.json)
+- 版本：`20261117-2328`
+- 加密包：[`avdb-20261117-2328.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261117-2328/avdb-20261117-2328.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
-- 更新方式：`应用内 OTA`
+- 更新方式：`Docker 镜像`
+- 需要更新镜像的文件：`requirements.txt`
 - 更新摘要：
+  统一影片、演员和清单订阅的未登录提示，缩短提示区域并增加与订阅卡片的间距。
+  未登录 JavDB 时，订阅管理跳过在线类别请求并提示登录，本地订阅可继续使用，错误提示不再显示整页 HTML。
+  降低资源包导入和设置备份的内存占用，导出边压缩边加密，发布包生成失败时保留上一版文件
+  降低色花堂、X1080X 爬取和失败重爬的内存峰值，帖子分批入库，X1080X 文件大小分批回填
+  降低服务启动、演员搜索和 Emby 入库匹配的内存峰值，大型库分批读取
   在线资源未登录或登录失效时隐藏类别、TOP 250、排行榜、热播和热门标签，登录后恢复显示
   修复演员映射在线更新时旧页面 ID 回填与在线映射冲突、导致整次更新失败的问题
   新增演员页面 ID 映射与 JSON 导入，浏览演员页时自动补全映射；未登录 JavDB 也可按姓名或别名搜索本地已收录演员并查看作品
@@ -37,11 +43,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   未登录 JAVDB 也可以进行演员订阅
   优化未登录时禁止再去探测在线影片详情页
   资源卡片和预览封面按 R18 → 原图 → JavDB 逐个尝试，全部候选失效后卡片才显示默认图；保留原封面及 TG 频道原图，已导出资源的 R18 图片失效时自动回退频道原图和 JavDB
-  TG 用户账号退出或强制退出时，可分别选择保留取链记录、发布记录和处理记录，默认全部保留，并保留对应去重信息
-  所有影片订阅统一支持未登录或登录失效时匹配本地资源；登录有效时按资源来源开关和优先级查询在线磁链及评论区资源，登录失效不再阻断本地影片订阅检查，演员作品列表仍匿名获取
-  演员订阅通过公开列表获取番号，未登录或登录失效时照常匹配本地资源，登录有效时按资源来源开关和优先级匹配本地、在线磁链及评论区资源；分类过滤、动态目录与完成通知无需额外请求影片详情
-  修复 TG 监控图片展示问题
-  同步支持 NGi 的 strm Size 提取和匹配
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
