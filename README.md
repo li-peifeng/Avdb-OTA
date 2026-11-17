@@ -13,15 +13,14 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20261117-2328`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261117-2328)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261117-2328/manifest.json)
-- 版本：`20261117-2328`
-- 加密包：[`avdb-20261117-2328.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261117-2328/avdb-20261117-2328.pkg.enc)
+- Release：[`20261117-2334`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261117-2334)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261117-2334/manifest.json)
+- 版本：`20261117-2334`
+- 加密包：[`avdb-20261117-2334.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261117-2334/avdb-20261117-2334.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
-- 更新方式：`Docker 镜像`
-- 需要更新镜像的文件：`requirements.txt`
+- 更新方式：`应用内 OTA`
 - 更新摘要：
   统一影片、演员和清单订阅的未登录提示，缩短提示区域并增加与订阅卡片的间距。
   未登录 JavDB 时，订阅管理跳过在线类别请求并提示登录，本地订阅可继续使用，错误提示不再显示整页 HTML。
