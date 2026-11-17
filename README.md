@@ -13,15 +13,14 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20261117-2010`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261117-2010)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261117-2010/manifest.json)
-- 版本：`20261117-2010`
-- 加密包：[`avdb-20261117-2010.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261117-2010/avdb-20261117-2010.pkg.enc)
+- Release：[`20261117-2013`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261117-2013)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261117-2013/manifest.json)
+- 版本：`20261117-2013`
+- 加密包：[`avdb-20261117-2013.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261117-2013/avdb-20261117-2013.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
-- 更新方式：`Docker 镜像`
-- 需要更新镜像的文件：`.dockerignore`
+- 更新方式：`应用内 OTA`
 - 更新摘要：
   修复演员映射在线更新时旧页面 ID 回填与在线映射冲突、导致整次更新失败的问题
   新增演员页面 ID 映射与 JSON 导入，浏览演员页时自动补全映射；未登录 JavDB 也可按姓名或别名搜索本地已收录演员并查看作品
