@@ -13,15 +13,16 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20261118-1520`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261118-1520)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261118-1520/manifest.json)
-- 版本：`20261118-1520`
-- 加密包：[`avdb-20261118-1520.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261118-1520/avdb-20261118-1520.pkg.enc)
+- Release：[`20261118-1659`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261118-1659)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261118-1659/manifest.json)
+- 版本：`20261118-1659`
+- 加密包：[`avdb-20261118-1659.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261118-1659/avdb-20261118-1659.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 应用内 OTA 最低镜像版本：`20261118-0000`
 - 更新摘要：
+  资源搜索接口支持用 num 参数只按番号查询。
   修复 TG 频道源帖核验反复补查历史消息、刷屏的问题，源帖全量核验完成后间隔一小时再查。
   统一影片、演员和清单订阅的未登录提示，缩短提示区域并增加与订阅卡片的间距。
   未登录 JavDB 时，订阅管理跳过在线类别请求并提示登录，本地订阅可继续使用，错误提示不再显示整页 HTML。
@@ -41,7 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   TG 频道检查时间、来源删除核验游标和导出内容快照持久保存，更新重启后接续未完成任务，已完成且内容未变的资源不重复自动导出；资源导出计数按等待、已处理、异常分别统计
   TG 频道源帖删除后，按具体资源指纹同步移除对应导出资源，保留同番号其它版本及仍有有效来源的资源；支持离线补查，后续增量包和全量包同步携带删除标记
   未登录 JAVDB 也可以进行演员订阅
-  优化未登录时禁止再去探测在线影片详情页
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
