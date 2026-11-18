@@ -13,17 +13,16 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20261118-0000`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261118-0000)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261118-0000/manifest.json)
-- 版本：`20261118-0000`
-- 加密包：[`avdb-20261118-0000.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261118-0000/avdb-20261118-0000.pkg.enc)
+- Release：[`20261118-1520`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261118-1520)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261118-1520/manifest.json)
+- 版本：`20261118-1520`
+- 加密包：[`avdb-20261118-1520.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261118-1520/avdb-20261118-1520.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 应用内 OTA 最低镜像版本：`20261118-0000`
-- 需要更新镜像的文件：`launcher/build_ota.py、launcher/installer.py、launcher/manifest.py、launcher/ota_policy.py、launcher/remote_update.py、launcher/update.py`
 - 更新摘要：
-  旧版 Docker 镜像需先升级到 20261118-0000 或更高版本，之后即可继续使用应用内更新。
+  修复 TG 频道源帖核验反复补查历史消息、刷屏的问题，源帖全量核验完成后间隔一小时再查。
   统一影片、演员和清单订阅的未登录提示，缩短提示区域并增加与订阅卡片的间距。
   未登录 JavDB 时，订阅管理跳过在线类别请求并提示登录，本地订阅可继续使用，错误提示不再显示整页 HTML。
   降低资源包导入和设置备份的内存占用，导出边压缩边加密，发布包生成失败时保留上一版文件
