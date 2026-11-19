@@ -13,15 +13,16 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20261119-1440`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261119-1440)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261119-1440/manifest.json)
-- 版本：`20261119-1440`
-- 加密包：[`avdb-20261119-1440.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261119-1440/avdb-20261119-1440.pkg.enc)
+- Release：[`20261119-1819`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261119-1819)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261119-1819/manifest.json)
+- 版本：`20261119-1819`
+- 加密包：[`avdb-20261119-1819.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261119-1819/avdb-20261119-1819.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 应用内 OTA 最低镜像版本：`20261118-0000`
 - 更新摘要：
+  修复资源标题中的 4K60 等画质和帧率标记被误拼进番号的问题。
   修复手机端左侧菜单无法向下滚动的问题。
   资源搜索接口支持用 num 参数只按番号查询。
   修复 TG 频道源帖核验反复补查历史消息、刷屏的问题，源帖全量核验完成后间隔一小时再查。
@@ -41,7 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   修复演员信息补全按姓名查找 Emby 人物时，未找到同名演员却误用首条搜索结果的问题，避免将其他演员作为补全目标
   修复直接发送 ED2K 或磁力链接给 TG 机器人下载后未显示已下载的问题，按资源 hash 匹配已有资源，ED2K 同时核对文件大小，失败提交不标记已下载
   TG 频道检查时间、来源删除核验游标和导出内容快照持久保存，更新重启后接续未完成任务，已完成且内容未变的资源不重复自动导出；资源导出计数按等待、已处理、异常分别统计
-  TG 频道源帖删除后，按具体资源指纹同步移除对应导出资源，保留同番号其它版本及仍有有效来源的资源；支持离线补查，后续增量包和全量包同步携带删除标记
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
