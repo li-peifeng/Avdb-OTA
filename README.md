@@ -13,15 +13,16 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20261120-1714`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261120-1714)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261120-1714/manifest.json)
-- 版本：`20261120-1714`
-- 加密包：[`avdb-20261120-1714.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261120-1714/avdb-20261120-1714.pkg.enc)
+- Release：[`20261123-1624`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261123-1624)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261123-1624/manifest.json)
+- 版本：`20261123-1624`
+- 加密包：[`avdb-20261123-1624.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261123-1624/avdb-20261123-1624.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 应用内 OTA 最低镜像版本：`20261118-0000`
 - 更新摘要：
+  修复 TG 导出时旧消息仍读取原图、图片下载因本地排队误判超时的问题。
   资源筛选新增「未入库（排除同号）」，隐藏 Emby 中已有同番号的资源。
   修复资源标题中的 4K60 等画质和帧率标记被误拼进番号的问题。
   修复手机端左侧菜单无法向下滚动的问题。
@@ -41,7 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   修正番号格式化逻辑
   资源已入库采用分层匹配：优先精确大小，磁力资源支持自定义附带文件大小容差，默认 30 MB，设为 0 关闭；容差唯一命中直接显示已入库，多版本不明确时保留同号入库，ED2K 保持严格匹配；保存 Emby 设置或完成媒体库刷新后更新资源列表状态
   修复演员信息补全按姓名查找 Emby 人物时，未找到同名演员却误用首条搜索结果的问题，避免将其他演员作为补全目标
-  修复直接发送 ED2K 或磁力链接给 TG 机器人下载后未显示已下载的问题，按资源 hash 匹配已有资源，ED2K 同时核对文件大小，失败提交不标记已下载
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
