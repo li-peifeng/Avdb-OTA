@@ -13,15 +13,16 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
 ## 当前发布
 
 <!-- AVDB-OTA-CURRENT-RELEASE:START -->
-- Release：[`20261125-1826`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261125-1826)
-- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261125-1826/manifest.json)
-- 版本：`20261125-1826`
-- 加密包：[`avdb-20261125-1826.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261125-1826/avdb-20261125-1826.pkg.enc)
+- Release：[`20261125-1910`](https://github.com/li-peifeng/Avdb-OTA/releases/tag/20261125-1910)
+- Manifest：[`manifest.json`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261125-1910/manifest.json)
+- 版本：`20261125-1910`
+- 加密包：[`avdb-20261125-1910.pkg.enc`](https://github.com/li-peifeng/Avdb-OTA/releases/download/20261125-1910/avdb-20261125-1910.pkg.enc)
 - 签名算法：Ed25519
 - 签名 `key_id`：`2026-next`
 - 加密算法：AES-256-GCM
 - 应用内 OTA 最低镜像版本：`20261118-0000`
 - 更新摘要：
+  修复 LTX 和 FT.A.V 卡片补图后仍停在默认封面的问题，加载失败时会自动重试。
   修复 TG 导出时漏掉图片附件和相册封面的问题，LTX 等已入库的缺图资源可按原帖补回封面。
   X1080X 爬取任务新增「随机延迟」，开启后仅用单线程，每次请求前随机多等 5–10 秒。优化任务编辑排版并对齐采集设置。
   修复 TG 导出时旧消息仍读取原图、图片下载因本地排队误判超时的问题。
@@ -41,7 +42,6 @@ Manifest，下载加密的应用 Release，并在容器内完成校验、解密�
   修复设置类别黑名单后，未登录或登录失效时演员订阅检查失败、误提示重新登录的问题
   优化搜索逻辑（番号/关键字）
   手动全量更新支持多选
-  修正番号格式化逻辑
 - 公钥 keyring：[`ota-signing-keyring.json`](./ota-signing-keyring.json)
 <!-- AVDB-OTA-CURRENT-RELEASE:END -->
 
